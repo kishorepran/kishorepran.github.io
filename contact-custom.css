@@ -1,0 +1,37 @@
+.contactInfoMargin {
+	margin-right:10%;
+    margin-left:10%;
+    margin-top:4%;
+    margin-bottom:4%;
+}
+
+.sideHeading {
+	color: rgba(26, 26, 26, 0.9);
+	line-height: 1.2em;
+	letter-spacing: 2px;
+	font-weight: 400;
+	font-style: normal;
+	color: #4A4A4A;
+}
+
+.listSubHeading {
+	color: rgba(26, 26, 26, 0.9);
+	letter-spacing: 2px;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.listSubMinorHeading {
+	color: rgba(26, 26, 26, 0.7);
+	letter-spacing: 1px;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.detailStyle {
+	letter-spacing: 0;
+	font-weight: 400;
+	font-style: normal;
+	color: rgba(26, 26, 26, 0.6);
+}
+

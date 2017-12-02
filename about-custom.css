@@ -1,0 +1,17 @@
+.intermediateContentPreHeader {
+	line-height: 1.5em;
+	text-transform: none;
+	letter-spacing: 1px;
+	font-weight: 400;
+	font-style: italic;
+	color: #FFF;
+}
+
+.intermediateContentHeader {
+	line-height: 1em;
+	text-transform: uppercase;
+	letter-spacing: 0.0571429em;
+	font-weight: 700;
+	font-style: normal;
+	color: #FFF;
+}

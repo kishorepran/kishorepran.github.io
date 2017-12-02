@@ -1,0 +1,330 @@
+.bounceConatiner {
+	height: 80px;
+}
+
+/* header style elements */
+.headerBackgorundStyle {
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.headerBackgorundLayer {
+	background-color: rgba(0, 0, 0, 0.5);
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.headerFirstTextStyle {
+	font-size: 24px;
+	line-height: 1.5em;
+	text-transform: none;
+	letter-spacing: 1px;
+	font-weight: 400;
+	font-style: italic;
+	color: #FFF;
+}
+
+.headerSecondtextStyle {
+	letter-spacing: 0.0571429em;
+	font-size: 60 px;
+	line-height: 1em;
+	font-weight: 700;
+	font-style: bold;
+	color: #FFF;
+}
+
+.borderedButtonHeader {
+	background-color: transparent;
+	border: 2px solid #FFF !important;
+	color: #FFF;!important;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 550;
+	font-style: normal;
+	font-size: 15px;
+	padding: 13px 26px !important;
+	line-height: normal;
+	margin: 1em;
+	color: #FFF;
+	text-decoration: none;
+	display: inline-block;
+	transition: background-color 0.1s ease-in-out 0s, color 0.1s ease-in-out 0s;
+}
+
+.buttonHeader {
+	background-color: transparent;
+	color: #FFF;!important;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 550;
+	font-style: normal;
+	font-size: 15px;
+	padding: 13px 26px !important;
+	line-height: normal;
+	margin: 1em;
+	color: #FFF;
+	text-decoration: none;
+	display: inline-block;
+	transition: background-color 0.1s ease-in-out 0s, color 0.1s ease-in-out 0s;
+}
+
+.buttonHeader:hover {
+	background: #FFFFFF;
+	color: #000000;
+}
+
+.borderedButtonHeader:hover {
+	background: #FFFFFF;
+	color: #000000;
+}
+
+.updateDateStyle {
+	letter-spacing: 0;
+	font-weight: 400;
+	font-style: normal;
+	color: rgba(26, 26, 26, 0.8);
+}
+
+/* Intermediate contents  a heading with a paragraph in center */
+
+.briefcontentHeader {
+	color: rgba(26, 26, 26, 0.9);
+	font-size: 32px;
+	line-height: 1.2em;
+	text-transform: none;
+	letter-spacing: 0px;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.briefcontentDetail {
+	font-size: 15px;
+	line-height: 1.8em;
+	letter-spacing: 0px;
+	font-weight: normal;
+	font-style: normal;
+	color: rgba(26, 26, 26, 0.6);
+}
+
+.jumboRightAndLeftPadding {
+	padding-right: 20%;
+	padding-left: 20%;
+}
+
+.mediumRightAndLeftPadding {
+	padding-right: 20%;
+	padding-left: 20%;
+}
+
+.mediumRightAndLeftMargin {
+	margin-right: 4%;
+	margin-left: 4%;
+}
+
+.mediumTopAndBottomMargin {
+	margin-top: 4%;
+	margin-bottom: 4%;
+}
+
+.jumboTopAndBottomMargin {
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+/* horizontal line */
+
+.horizontalRule {
+	min-height: 2px;
+	border-top: 1px solid rgba(26, 26, 26, 0.3);
+	height: 1px;
+	background-color: #FFFFFF;
+	margin-right: 15%;
+	margin-left: 15%;
+}
+
+/* Pre footer content */
+
+.preFooterContent {
+	background-color: #353439;
+	line-height: 1.8em;
+	font-weight: 400;
+	color: #FFF;
+}
+
+.preFooterHeader {
+	margin: 40px;
+	font-size: 26px;
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* Bordered Button Style */
+
+.borderedButtonPrefooter {
+	background-color: transparent;
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgba(255,255,255,.8) !important;
+	color: rgba(255,255,255,.8) !important;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 12px;
+	padding: 13px 26px !important;
+	line-height: normal;
+	margin: 32px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.borderedButtonPrefooter:hover {
+	background-color: #000000;
+}
+
+/* portfolio content classes */
+
+.wrapper {
+	background-color: #ffc;
+	display: block;
+	float: left;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	padding: none;
+	margin: none;
+}
+
+.content {
+	background-color: rgba(0,0,0,.7);
+	color: rgba(255,255,255,0.8);
+	letter-spacing: 0.2em;
+	display: block;
+	float: left;
+	position: absolute;
+	top:75%;
+	bottom: 0px;
+	padding: none;
+	margin: none;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all .3s linear .1s;
+	-moz-transition: all .3s linear .1s;
+	-ms-transition: all .3s linear .1s;
+	-o-transition: all .3s linear .1s;
+	transition: all .3s linear .1s;
+}
+
+.content:hover {
+	top: 0px;
+	bottom: 0px;
+	background-color: rgba(0,0,0,.7);
+	color: rgba(255,255,255,0.9);
+}
+
+/* button with black border and highlights to white at hover */
+
+.borderedButtonContent {
+	background-color: transparent;
+	border: 2px solid #000000 !important;
+	color: #FFF;!important;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 12px;
+	padding: 13px 26px !important;
+	line-height: normal;
+	margin: 1em;
+	color: #000000;
+	text-decoration: none;
+	display: inline-block;
+	transition: background-color 0.1s ease-in-out 0s, color 0.1s ease-in-out 0s;
+}
+
+.borderedButtonContent:hover {
+        background: #000000;
+        color: #FFFFFF;
+}
+
+
+
+/* Footer content */
+
+.footerContent {
+	background-color: #26262A;
+}
+
+.footerSocialIcons {
+	background-color: transparent;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	margin: 0.25em;
+}
+
+.footerSocialIcons:hover {
+	background-color: #FFFFFF;
+}
+
+.footerCopyrightText {
+	color: rgba(255, 255, 255, 0.4);
+	font-weight: 400;
+	font-style: normal;
+	font-size: 13px;
+}
+
+.buttonFooter {
+	background-color: transparent;
+	color: rgba(255, 255, 255, 0.7);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 13px;
+	line-height: 1.65;
+	padding: 13px 5px !important;
+	margin: 0.25em;
+	text-decoration: none;
+	display: inline-block;
+	transition: background-color 0.1s ease-in-out 0s, color 0.1s ease-in-out 0s;
+}
+
+.buttonFooter:hover {
+	color: #FFFFFF;
+}
+
+.bounceAnimation {
+
+	-webkit-animation-name: example; /* Chrome, Safari, Opera */
+	-webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+	animation-name: example;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 4;
+	animation-direction: alternate;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+from {
+	padding-top: 1px;
+}
+to {
+	padding-top: -20px;
+}
+}
+
+/* Standard syntax */
+@keyframes
+example {from {
+	margin-top: 1px;
+}
+to {
+	margin-top: -20px;
+}
+}

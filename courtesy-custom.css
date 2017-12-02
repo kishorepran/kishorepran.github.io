@@ -1,0 +1,7 @@
+.listLink {
+	background-color: transparent;
+	text-decoration: none;
+}
+.listLink:hover {
+	color: rgba(26, 26, 26, 1.0);
+}
