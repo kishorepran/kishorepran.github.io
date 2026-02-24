@@ -1,309 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Resume – Pran Kishore</title>
+  <meta name="description" content="Resume and skill sets of Pran Kishore, iOS Tech Lead.">
+  <meta name="author" content="Pran Kishore">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Favicon/favicon.ico">
+  <link rel="apple-touch-icon" href="Favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles/design-system.css">
+</head>
+<body>
 
-		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-		Remove this if you use the .htaccess -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!-- ── NAVBAR ───────────────────────────────────────────── -->
+  <nav class="glass-nav" id="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Pran<span class="nav-brand-dot">.</span></a>
+      <div class="nav-links">
+        <a href="index.html"     class="nav-pill">Home</a>
+        <a href="portfolio.html" class="nav-pill">Portfolio</a>
+        <a href="about.html"     class="nav-pill">About</a>
+        <a href="blog.html"      class="nav-pill">Blog</a>
+        <a href="resume.html"    class="nav-pill">Resume</a>
+        <a href="contact.html"   class="nav-pill">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle"></button>
+        <button class="nav-hamburger" id="nav-hamburger"
+                aria-label="Open navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
 
-		<title>Resume - Pran Kishore</title>
-		<meta name="description" content="">
-		<meta name="author" content="PRAN">
+  <!-- ── MOBILE MENU ──────────────────────────────────────── -->
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <a href="index.html"     class="mobile-nav-pill">Home</a>
+    <a href="portfolio.html" class="mobile-nav-pill">Portfolio</a>
+    <a href="about.html"     class="mobile-nav-pill">About</a>
+    <a href="blog.html"      class="mobile-nav-pill">Blog</a>
+    <a href="resume.html"    class="mobile-nav-pill">Resume</a>
+    <a href="contact.html"   class="mobile-nav-pill">Contact</a>
+  </nav>
 
-		<meta name="viewport" content="width=device-width; initial-scale=1.0">
-		<link rel="stylesheet" href="w3.css">
-		<link rel="stylesheet" href="common-custom.css">
-		<link rel="stylesheet" href="resume_custom.css">
-		
-		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-		<link rel="shortcut icon" href="Favicon/favicon.ico">
-		<link rel="apple-touch-icon" href="Favicon/apple-touch-icon.png">
-		
-	</head>
+  <!-- ── HERO ─────────────────────────────────────────────── -->
+  <section class="hero" aria-label="Resume hero">
+    <div class="hero-bg"
+         style="background-image: url('images/background_resume_latest.jpg');"
+         role="img" aria-label="Resume page background"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">What I've done and My</p>
+      <h1 class="hero-headline"><span class="accent">Skill Sets</span></h1>
+      <div class="hero-actions">
+        <a href="pdf-docs/pran-kishore-cv.pdf"
+           class="glass-btn glass-btn--primary" download>Download Resume</a>
+      </div>
+    </div>
+    <a href="#technologies" class="hero-scroll" aria-label="Scroll to content">
+      <span class="hero-scroll-label">Scroll</span>
+      <svg class="hero-scroll-icon" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <polyline points="6 9 12 15 18 9"/>
+      </svg>
+    </a>
+  </section>
 
-	<body>
-		<!-- Main outer header container -->
-		<div class="w3-container w3-image headerBackgorundStyle" style="background: url('images/background_resume_latest.jpg')" >
-			<!-- A translucent layer only if the image in background is light. -->
-			<div class="w3-container headerBackgorundLayer">
-			<!-- Inner Navigation header -->
+  <!-- ── TECHNOLOGIES ──────────────────────────────────────── -->
+  <section class="section" id="technologies" aria-labelledby="tech-heading">
+    <div class="resume-layout fade-up">
+      <div>
+        <p class="resume-section-label" id="tech-heading">Technologies</p>
+      </div>
+      <div>
+        <div class="grid-2" style="gap:32px; margin-bottom:0;">
+          <div>
+            <p class="subsection-heading">Day-to-Day Comfort</p>
+            <div class="skill-tags">
+              <span class="skill-tag">GIT / SVN</span>
+              <span class="skill-tag">Xcode 26</span>
+              <span class="skill-tag">Swift / SwiftUI / Objective C</span>
+              <span class="skill-tag">CI/CD / Github Actions</span>
+              <span class="skill-tag">Jira / Confluence / Github</span>
+              <span class="skill-tag">Gemini CLI / Claude Code</span>
+              <span class="skill-tag">AI tools (MCP server Plugins &amp; Skills)</span>
+            </div>
+          </div>
+          <div>
+            <p class="subsection-heading">Experience With</p>
+            <div class="skill-tags">
+              <span class="skill-tag">JAVA / JAVASCRIPT</span>
+              <span class="skill-tag">Sketch / XD / Figma</span>
+              <span class="skill-tag">Github CoPilot / Claude Code</span>
+              <span class="skill-tag">HTML5 / CSS3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-			<div class="w3-container  w3-center">
-				<div class="w3-row  w3-padding-24">
-					<div class="w3-col m3 l2">
-						<a class="buttonHeader" href="index.html">HOME</a>
-					</div>
-					<div class="w3-col m3 l2">
-						<a class="buttonHeader" href="portfolio.html">PORTFOLIO</a>
-					</div>
-					<div class="w3-col m3 l2">
-						<a class="buttonHeader" href="about.html">ABOUT</a>
-					</div>
-					<div class="w3-col m3 l2 ">
-						<a class="buttonHeader" href="blog.html">BLOG</a>
-					</div>
-					<div class="w3-col m3 l2 ">
-						<a class="buttonHeader" href="resume.html">RESUME</a>
-					</div>
-					<div class="w3-col m3 l2 ">
-						<a class="borderedButtonHeader" href="contact.html">CONTACT</a>
-					</div>
-				</div>
-			</div>
+  <div class="glass-divider"></div>
 
-			<!-- Lower texts elements -->
-			<div class="w3-container w3-padding-24">
-				<div class="w3-container w3-center headerFirstTextStyle">
-					<h4>What I've done and My</h4>
-				</div>
-				<div class="w3-container w3-center">
-					<h1 class="headerSecondtextStyle">Skill Sets</h1>
-				</div>
+  <!-- ── iOS CORE SKILLS ──────────────────────────────────── -->
+  <section class="section" aria-labelledby="ios-heading">
+    <div class="resume-layout fade-up">
+      <div>
+        <p class="resume-section-label" id="ios-heading">iOS Core Skills</p>
+      </div>
+      <div>
+        <div class="ios-skill-block">
+          <h4>Objective C / Swift</h4>
+          <p>Design patterns MVC, Delegation, Singleton, Concurrency management, collection types. ARC, Optional Chaining, Protocols, Extensions, Generics.</p>
+        </div>
+        <div class="ios-skill-block">
+          <h4>Frameworks</h4>
+          <p>Address book, Assets Library, Core Graphics / Image / Location / Text / Video / Motion, Foundation, Health Kit, Map Kit, Media player, Sql Lite 3.0, Security, Social. XCTest for unit &amp; UI testing.</p>
+        </div>
+        <div class="ios-skill-block">
+          <h4>Features</h4>
+          <p>App extensions, Handoff, UIKit Dynamics, Background fetch, Siri kit, Size classes, Interactive APNS, Local notifications, Custom Gesture recognizers.</p>
+        </div>
+        <div class="ios-skill-block">
+          <h4>Core Services</h4>
+          <p>GCD, In app purchase, SQL Lite, Core data.</p>
+        </div>
+        <div class="ios-skill-block">
+          <h4>App Management</h4>
+          <p>Generating Certificate &amp; provisioning, iTunes connect configuration App store upload, test flight distribution both internal &amp; external, App analytics.</p>
+        </div>
+        <div class="ios-skill-block">
+          <h4>Xcode / Others</h4>
+          <p>Integration of third party frameworks via COCOA PODS, Instruments, Time profiling, allocation, memory leaks, LLDB, Custom breakpoints, View Debugger, Touch ID, Source editor extensions, Barometer, Three Axis Gyro, Accelerometer. Ethical Hacking - Jailbreaking iPhone, MTM (Man in the Middle attack), Reverse Engineering Binary.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-			</div>
-			<!-- Lower Buttons -->
+  <div class="glass-divider"></div>
 
-			<div class="w3-container w3-padding-16 w3-center">
-				<a class="borderedButtonHeader" href="pdf-docs/pran-kishore-cv.pdf">DOWNLOAD RESUME</a>
-			</div>
+  <!-- ── WORK EXPERIENCE ──────────────────────────────────── -->
+  <section class="section" aria-labelledby="work-heading">
+    <div class="resume-layout fade-up">
+      <div>
+        <p class="resume-section-label" id="work-heading">Work Experience</p>
+      </div>
+      <div>
 
-			</div>
-		</div>
+        <div class="work-item">
+          <div class="work-item-title">Lead Software Engineer</div>
+          <div class="work-item-meta">
+            <span>EPAM Systems Inc.</span>
+            <span class="sep">·</span>
+            <span class="period">Sep 2020 – Present</span>
+          </div>
+          <p class="work-item-desc">Led a team of iOS developers in the development and delivery
+            of high-quality iOS apps. Worked with clients to gather requirements and develop
+            feasible solutions on the Apple platform. Coordinated with cross-functional teams to
+            ensure projects were delivered on time and within budget.</p>
+        </div>
 
-   <!-- Main outer header container  END -->
+        <div class="work-item">
+          <div class="work-item-title">Tech Lead (iOS)</div>
+          <div class="work-item-meta">
+            <span>Optimize IT Systems Pvt. Ltd.</span>
+            <span class="sep">·</span>
+            <span class="period">Mar 2019 – Sep 2020</span>
+          </div>
+          <p class="work-item-desc">Led a team of 5 developers in the delivery of 3 projects.
+            Participated in pre-sales activities, including technical bid review, mobile solution
+            review, and estimation and forecasting of project timelines. Collaborated with UI/UX
+            team to migrate from Photoshop to Sketch and later to Adobe XD.</p>
+        </div>
 
-		<!-- Main outer header container  END -->
+        <div class="work-item">
+          <div class="work-item-title">Associate Consultant</div>
+          <div class="work-item-meta">
+            <span>Atos India Pvt. Ltd.</span>
+            <span class="sep">·</span>
+            <span class="period">May 2015 – March 2019</span>
+          </div>
+          <p class="work-item-desc">1. Developing iOS Mobile Applications 2. Analyzing client
+            requirements and suggesting feasible mobile solutions. 3. Managing entire technical
+            life cycle of the project i.e evaluating client business model, planning mobile
+            application that would help drive business, planning UI &amp; UX with design team,
+            coding the recommended application, Writing unit test code and polishing app with help
+            of xcode instruments, coordinating with test team for deploying adhoc builds &amp;
+            continuous bug fixing. 4. Monetizing the app with Ad's, publishing the app on
+            store.</p>
+        </div>
 
-		
-		<!-- First content div -->
-		<div class="w3-container w3-margin-32">
-			<div class="w3-row">
-			<div class="w3-third w3-container">
-				<h2 class="sideHeading">TECHNOLOGIES</h2>
-			</div>
-			<div class="w3-third w3-container">
-				<h4 class="listSubHeading">DAY-TO-DAY COMFORT</h4>
-				
-				<ul style="list-style-type:disc" class="w3-padding-4 detailStyle">
-						<li class="w3-padding-8">GIT / SVN</li>
-						<li class="w3-padding-8">Xcode 26</li>
-						<li class="w3-padding-8">Swift / SwiftUI / Objective C</li>
-						<li class="w3-padding-8">CI/CD / Github Actions</li>
-						<li class="w3-padding-8">Jira / Confluence / Github</li>
-						<li class="w3-padding-8">Gemini CLI / Claude Code</li>
-						<li class="w3-padding-8">AI tools (MCP server Plugins & Skills)</li>
-					</ul>
+        <div class="work-item">
+          <div class="work-item-title">Software Engineer</div>
+          <div class="work-item-meta">
+            <span>Indusnet Technologies (Formerly Customer First Infonet Private ltd.)</span>
+            <span class="sep">·</span>
+            <span class="period">Jan 2014 – May 2015</span>
+          </div>
+          <p class="work-item-desc">Developed iOS Mobile Applications. Worked in a dedicated
+            hiring model for offshore clients, sharing code via DVCS (GIT). Estimated requirements
+            and timelines for maintaining and developing new applications. Wrote unit test code and
+            distributed builds to internal testers and clients.</p>
+        </div>
 
-				
-			</div>
-			<div class="w3-third w3-container">
-				<h4 class="listSubHeading">EXPERIENCE WITH</h4>
-				  <ul style="list-style-type:disc" class="w3-padding-4 detailStyle">
-				        <li class="w3-padding-8">JAVA / JAVASCRIPT </li>
-				        <li class="w3-padding-8">Sketch / XD / Figma </li>
-						<li class="w3-padding-8">Github CoPilot / Claude Code</li>
-						<li class="w3-padding-8">HTML5 / CSS3</li>
-				</ul>
-			</div>
-		</div>
-		</div>
+        <div class="work-item">
+          <div class="work-item-title">Jr. iPhone Developer</div>
+          <div class="work-item-meta">
+            <span>Micronix System (Formerly Micronix Technologies Pvt. Ltd.), Kolkata</span>
+            <span class="sep">·</span>
+            <span class="period">July 2013 – Jan 2014</span>
+          </div>
+          <p class="work-item-desc">1. Developing iOS Mobile Applications. 2. Evaluating client
+            requirement, planning UI &amp; UX with design team, coding the recommended application.
+            3. Monetizing the app with Ad's, publishing the app on store.</p>
+        </div>
 
-		<!-- First content div END-->
-		<!-- Horizontal Line ONLY -->
-		<div class="horizontalRule w3-container">
-		</div>
-		<!-- iOS Core content div -->
-		
-		<div class="w3-container w3-margin-32">
-			<div class="w3-row">
-			<div class="w3-third w3-container">
-				<h2 class="sideHeading">iOS CORE SKILLS</h2>
-			</div>
-			<div class="w3-half w3-container">
-	
-				<div class="w3-container">
-				<h4 class="listSubHeading">Objective C / Swift</h4>
-				<p class="detailStyle">Design patterns MVC, Delegation, Singleton, Concurrency management, collection types. ARC, Optional Chaining, Protocols, Extensions, Generics. </p>
-			    </div>
-			    
-			    <div class="w3-container">
-				<h4 class="listSubHeading">Frameworks</h4>
-				<p class="detailStyle">Address book, Assets Library, Core Graphics / Image /Location / Text/Video/Motion, Foundation, Health Kit, Map Kit, Media player, Sql Lite 3.0, Security, Social. XCTest for unit & Ul testing.</p>
-			    </div>
-			    
-			    <div class="w3-container">
-				<h4 class="listSubHeading">Features</h4>
-				<p class="detailStyle">App extensions, Handoff, UIKit Dynamics, Background fetch, Siri kit, Size classes, Ineractive APNS, Local notifications, Custom Gesture recognizers,</p>
-			    </div>
-			    
-			    <div class="w3-container">
-				<h4 class="listSubHeading">Core Services</h4>
-				<p class="detailStyle">GCD, In app purchase, SQL Lite, Core data. </p>
-			    </div>
-			    
-			    <div class="w3-container">
-				<h4 class="listSubHeading">App Management</h4>
-				<p class="detailStyle">Generating Certificate & provisioning, iTunes connect configuration App store upload, test flight distribution both internal & external, App analytics.</p>
-			    </div>
-			    
-			    <div class="w3-container">
-				<h4 class="listSubHeading">Xcode / Others</h4>
-				<p class="detailStyle">Integration of third party frameworks via COCOA PODS, Instruments, Time profiling, allocation, memory leaks,LLDB, Custom breakpoints, View Debugger, Touch ID, Source editor extensions, Barometer, Three Axis Gyro, Accelerometer. Ethical Hacking - Jailbreaking iPhone, MTM (Man in the Middile attack), Reverse Engineering Binary.</p>
-			    </div>
-			    
-			</div>
-		</div>
-		</div>
-		
-      <!-- iOS content div END-->
-		
-		<!-- Horizontal Line ONLY -->
-		<div class="horizontalRule w3-container">
-		</div>
-		
-		<!-- Second content div -->
-		
-		<div class="w3-container w3-margin-32">
-			<div class="w3-row">
-			<div class="w3-third w3-container">
-				<h2 class="sideHeading">WORK EXPERIENCE</h2>
-			</div>
-			<div class="w3-half w3-container">
-				
-				<div class="w3-container">
-				<h3 class="listSubHeading">Lead Software Engineer</h3>
-				<h5 class="listSubMinorHeading">Sep 2020 - Present , EPAM Systems Inc.</h5>
-				<p class="detailStyle">Led a team of iOS developers in the development and delivery of high-quality iOS apps. Worked with clients to gather requirements and develop feasible solutions on the Apple platform. Coordinated with cross-functional teams to ensure projects were delivered on time and within budget.</p>
-			    </div>
+      </div>
+    </div>
+  </section>
 
-				<div class="w3-container">
-				<h3 class="listSubHeading">Tech Lead (iOS)</h3>
-				<h5 class="listSubMinorHeading">Mar 2019 - Sep 2020 , Optimize IT Systems Pvt. Ltd.</h5>
-				<p class="detailStyle">Led a team of 5 developers in the delivery of 3 projects. Participated in pre-sales activities, including technical bid review, mobile solution review, and estimation and forecasting of project timelines. Collaborated with UI/UX team to migrate from Photoshop to Sketch and later to Adobe XD.</p>
-			    </div>
+  <div class="glass-divider"></div>
 
-			    <div class="w3-container">
-				<h3 class="listSubHeading">Associate Consultant</h3>
-				<h5 class="listSubMinorHeading">May 2015 - March 2019 , Atos India Pvt. Ltd.</h5>
-				<p class="detailStyle">1. Developing iOS Mobile Applications 2. Analyzing client requirements and suggesting feasible mobile solutions.
-                   3. Managing entire technical life cycle of the project i.e evaluating client business model , 
-                   planning mobile application that would help drive business , planning UI &amp; UX with design team ,coding the recommended application 
-                   , Writing unit test code and polishing app with help of xcode instruments , coordinating with test team for deploying adhoc builds &amp; continuous bug fixing.
-                   4. Monetizing the app with Ad's , publishing the app on store. </p>
-			    </div>
-			    
-			    <div class="w3-container">
-				<h3 class="listSubHeading">Software Engineer</h3>
-				<h5 class="listSubMinorHeading">Jan 2014 - May 2015 , Indusnet Technologies (Formerly Customer First Infonet Private ltd.)</h5>
-				<p class="detailStyle">Developed iOS Mobile Applications. Worked in a dedicated hiring model for offshore clients, sharing code via DVCS (GIT). Estimated requirements and timelines for maintaining and developing new applications. Wrote unit test code and distributed builds to internal testers and clients.</p>
-			    </div>
-			    
-			    <div class="w3-container">
-				<h3 class="listSubHeading">Jr. iPhone Developer</h3>
-				<h5 class="listSubMinorHeading">July 2013 - Jan 2014 , Micronix System (Formerly Micronix Technologies Pvt. Ltd.), Kolkata</h5>
-				<p class="detailStyle">1. Developing iOS Mobile Applications.
-                   2. Evaluating client requirement, planning UI &amp; UX with design team ,coding the recommended application.
-                   3. Monetizing the app with Ad's , publishing the app on store. </p>
-			    </div>
-			    
-			    
-			</div>
-		</div>
-		</div>
-		
-      <!-- Second content div END-->
-      
-      <!-- Horizontal Line ONLY -->
-		<div class="horizontalRule w3-container">
-		</div>
-      
-      <!-- Third content div -->
-		
-		<div class="w3-container w3-margin-32">
-			<div class="w3-row">
-			<div class="w3-third w3-container">
-				<h2 class="sideHeading">EDUCATION</h2>
-			</div>
-			<div class="w3-half w3-container">
-	
-				<div class="w3-container">
-				<h3 class="listSubHeading">B. Tech. (CSE)</h3>
-				<h5 class="listSubMinorHeading">Aug 2008 - May 2012 , Heritage Institute Of Technology, Kolkata</h5>
-				<p class="detailStyle">DGPA - 7.28<br>Exploring the programming languages c , c++ , JAVA , Data Structures , Algorithms , 
-					Computer graphics , Engineering Mathematics , Physics. </p>
-			    </div>
-			    
-			    <div class="w3-container">
-				<h3 class="listSubHeading">12 th , Science (PCMB) </h3>
-				<h5 class="listSubMinorHeading">May 2004 - May 2006 , St Joseph's Public School , Samastipur , Bihar</h5>
-				<p class="detailStyle">63%<br>Gaining understanding of science in Mathematics , Biology ,Physics , Chemistry. </p>
-			    </div>
-			    
-			    <div class="w3-container">
-				<h3 class="listSubHeading">10 th</h3>
-				<h5 class="listSubMinorHeading">May 2002 - May 2003</h5>
-				<p class="detailStyle">75%<br>Learning the principles of basic sciences. Taking part in drama activities.
-					 Got award for distinctive performance in 2nd National Cyber Olympiad. </p>
-			    </div>
-			    
-			</div>
-		</div>
-		</div>
-		
-      <!-- Third content div END-->
-      
-      <!-- Horizontal Line ONLY -->
-		<div class="horizontalRule w3-container">
-		</div>
-		
-		<!-- Fourth content div END-->
-		
-		<div class="w3-container w3-center mediumTopAndBottomMargin">
-			
-			<a class="borderedButtonContent" href="contact.html">Intersted ? Say hello.</a>	
-					 
-	   </div>
-		
-		<!-- Fourth content div END-->
-		
-<!-- Pre footer content div -->
+  <!-- ── EDUCATION ─────────────────────────────────────────── -->
+  <section class="section" aria-labelledby="edu-heading">
+    <div class="resume-layout fade-up">
+      <div>
+        <p class="resume-section-label" id="edu-heading">Education</p>
+      </div>
+      <div>
 
-        <div class="w3-container w3-padding-16 preFooterContent">
-			<div class="w3-container">
-				<h4 class="w3-left preFooterHeader ">Got an app idea. Need some help  ? </h4>
-				<a class="borderedButtonPrefooter w3-right" href="mailto:kishorepran@gmail.com?subject=Connect via website">Contact Me</a>
-			</div>
-		</div>
+        <div class="work-item">
+          <div class="work-item-title">B. Tech. (CSE)</div>
+          <div class="work-item-meta">
+            <span>Heritage Institute Of Technology, Kolkata</span>
+            <span class="sep">·</span>
+            <span class="period">Aug 2008 – May 2012</span>
+          </div>
+          <p class="work-item-desc">DGPA – 7.28. Exploring the programming languages C, C++,
+            JAVA, Data Structures, Algorithms, Computer graphics, Engineering Mathematics,
+            Physics.</p>
+        </div>
 
-        <!-- Pre footer content div END-->
+        <div class="work-item">
+          <div class="work-item-title">12th, Science (PCMB)</div>
+          <div class="work-item-meta">
+            <span>St Joseph's Public School, Samastipur, Bihar</span>
+            <span class="sep">·</span>
+            <span class="period">May 2004 – May 2006</span>
+          </div>
+          <p class="work-item-desc">63%. Gaining understanding of science in Mathematics, Biology,
+            Physics, Chemistry.</p>
+        </div>
 
-		<!-- Foooter content div -->
+        <div class="work-item">
+          <div class="work-item-title">10th</div>
+          <div class="work-item-meta">
+            <span class="period">May 2002 – May 2003</span>
+          </div>
+          <p class="work-item-desc">75%. Learning the principles of basic sciences. Taking part in
+            drama activities. Got award for distinctive performance in 2nd National Cyber
+            Olympiad.</p>
+        </div>
 
-     <div class="w3-container w3-center  w3-padding-48 footerContent">
-     	
-     	<div class="w3-container w3-center">
-						<a class="buttonFooter" href="index.html">HOME</a>
-						<a class="buttonFooter" href="portfolio.html">PORTFOLIO</a>
-						<a class="buttonFooter" href="about.html">ABOUT</a>
-						<a class="buttonFooter" href="blog.html">BLOG</a>
-						<a class="buttonFooter" href="resume.html">RESUME</a>
-						<a class="buttonFooter" href="contact.html">CONTACT</a>
-						<a class="buttonFooter" href="courtesy.html">COURTESY</a>
-		</div>
-		<div class="w3-container w3-center footerCopyrightText">
-			<p>&copy; 2015 Pran Kishore. All rights reserved.</p>
-		</div>	
-		
-		<div class="w3-container w3-center">
-			<a href="https://www.linkedin.com/in/pran-kishore/"><img src="images/social-linkedin.png" class="footerSocialIcons" alt="Linked In"></a>
-			<a href="https://twitter.com/pran_kishore"><img src="images/social-twitter.png" class="footerSocialIcons" alt="Twitter"></a>
-			<a href="https://www.facebook.com/pran.kishore.1"><img src="images/social-facebook.png" class="footerSocialIcons" alt="Facebook"></a>
-		</div>
-				
-	</div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Foooter content div END-->
+  <!-- ── CTA ───────────────────────────────────────────────── -->
+  <div style="text-align:center; padding:60px 28px;" class="fade-up">
+    <a href="contact.html" class="glass-btn glass-btn--primary">Interested? Say hello.</a>
+  </div>
 
-	</body>
+  <!-- ── PRE-FOOTER CTA ───────────────────────────────────── -->
+  <div class="prefooter-cta">
+    <h3>Got an app idea. Need some help?</h3>
+    <a href="mailto:kishorepran@gmail.com?subject=Connect via website"
+       class="glass-btn glass-btn--primary">Contact Me</a>
+  </div>
+
+  <!-- ── FOOTER ───────────────────────────────────────────── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html"     class="footer-nav-link">Home</a>
+        <a href="portfolio.html" class="footer-nav-link">Portfolio</a>
+        <a href="about.html"     class="footer-nav-link">About</a>
+        <a href="blog.html"      class="footer-nav-link">Blog</a>
+        <a href="resume.html"    class="footer-nav-link">Resume</a>
+        <a href="contact.html"   class="footer-nav-link">Contact</a>
+        <a href="courtesy.html"  class="footer-nav-link">Courtesy</a>
+      </nav>
+      <div class="footer-social" aria-label="Social media links">
+        <a href="https://www.linkedin.com/in/pran-kishore/"
+           class="footer-social-link" aria-label="LinkedIn"
+           target="_blank" rel="noopener noreferrer">
+          <img src="images/social-linkedin.png" alt="LinkedIn" width="20" height="20">
+        </a>
+        <a href="https://twitter.com/pran_kishore"
+           class="footer-social-link" aria-label="Twitter"
+           target="_blank" rel="noopener noreferrer">
+          <img src="images/social-twitter.png" alt="Twitter" width="20" height="20">
+        </a>
+        <a href="https://www.facebook.com/pran.kishore.1"
+           class="footer-social-link" aria-label="Facebook"
+           target="_blank" rel="noopener noreferrer">
+          <img src="images/social-facebook.png" alt="Facebook" width="20" height="20">
+        </a>
+      </div>
+      <p class="footer-copyright">&copy; 2015 Pran Kishore. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
 </html>

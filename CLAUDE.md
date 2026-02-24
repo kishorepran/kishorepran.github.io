@@ -17,30 +17,45 @@ python3 -m http.server 8000
 
 ## Architecture
 
-The site is built with plain HTML and CSS — no JavaScript frameworks, no bundlers, no dependencies to install.
+The site is built with plain HTML, CSS, and vanilla JS — no frameworks, no bundlers, no dependencies.
 
-**CSS layering:** Every page loads `w3.css` (the W3Schools CSS framework bundled locally) plus `common-custom.css` for shared styles, then a page-specific `*-custom.css` for overrides. When editing styles, check `common-custom.css` first since most reusable classes live there.
+**Design system:** `styles/design-system.css` is the single source of truth for all visual styles. It defines CSS custom properties (design tokens) and every reusable class. Every HTML page links only to this file. The old CSS files (`common-custom.css`, `*-custom.css`, `w3.css`) are no longer linked in any page and can be ignored.
+
+**JavaScript:** `scripts/main.js` is a single self-executing module that handles: theme toggle (dark/light, persisted in localStorage), navbar scroll behaviour, mobile hamburger menu, Intersection Observer scroll animations, active nav item detection, and hero parallax.
 
 **Page structure pattern:** All pages share the same layout skeleton:
-1. Full-bleed header with background image (`headerBackgorundStyle` + `w3-image`)
-2. Navigation bar (duplicated inline in each HTML file — no shared template/include)
-3. Content sections separated by `.horizontalRule` dividers
-4. Pre-footer CTA bar (`.preFooterContent`)
-5. Footer with nav links and social icons (`.footerContent`)
+1. Fixed glass navbar (`<nav class="glass-nav">`) — pill-shaped nav links, theme toggle, hamburger
+2. Full-viewport hero section (`<section class="hero">`) with parallax background image
+3. Content sections using `<section class="section">` with glass cards (`.glass-card`), grids (`.grid-3`, `.grid-2`), or the resume two-column layout (`.resume-layout`)
+4. Pre-footer CTA block (`.prefooter-cta`)
+5. Footer (`.site-footer`)
 
-**Key CSS classes in `common-custom.css`:**
-- `.wrapper` / `.content` — portfolio card hover overlay effect
-- `.borderedButtonHeader`, `.borderedButtonContent`, `.borderedButtonPrefooter` — three button variants for different contexts
-- `.jumboRightAndLeftPadding` — constrains text width on wide screens
-- `.bounceAnimation` — the animated chevron on the home page hero
+**Key CSS classes in `styles/design-system.css`:**
+- `.glass-card` / `.glass-card-body` — frosted glass content card
+- `.portfolio-card` / `.portfolio-card-overlay` — image card with hover-reveal overlay
+- `.glass-btn`, `.glass-btn--primary`, `.glass-btn--sm` — pill buttons
+- `.nav-pill` / `.mobile-nav-pill` — navbar link pills
+- `.company-banner` / `.company-banner-bg` — full-width background image banner (About page)
+- `.resume-layout` — two-column sticky-label layout (Resume and Courtesy pages)
+- `.fade-up`, `.fade-in`, `.stagger` — scroll animation triggers (JS adds `.visible` class)
+- `.eyebrow` — small uppercase accent label above section titles
+
+**CSS design tokens (most important):**
+- `--glass-bg`, `--glass-border`, `--glass-shadow` — the three glass material values
+- `--accent-blue` (`#0A84FF`), `--accent-purple` (`#BF5AF2`), `--accent-teal` (`#5AC8F5`) — Apple system colours
+- `--blur-sm`, `--blur-md` — `backdrop-filter` values for glass surfaces
+- `[data-theme="light"]` selector overrides all dark-mode tokens for light mode
 
 **Assets:**
 - `images/` — background images per page (named `background_<page>.jpg`), portfolio thumbnails, social icons
 - `pdf-docs/pran-kishore-cv.pdf` — the downloadable resume PDF
 - `Favicon/` — favicon and Apple touch icon
+- `images/background_optimizeitsystems.jpg` — **does not exist**; the Optimize IT Systems section in `about.html` uses `.company-banner--fallback` for a CSS gradient fallback
 
 ## Making Changes
 
-Since there are no shared templates or includes, navigation links and the footer are duplicated across all HTML files. When adding a new page or updating a nav link, update every `.html` file.
+Since there are no shared templates or includes, the navbar and footer are duplicated in every HTML file. When adding a nav item or page, update all 7 HTML files.
 
-The resume content lives in `resume.html`; the downloadable PDF is a separate file at `pdf-docs/pran-kishore-cv.pdf` that must be manually kept in sync.
+The resume content lives in `resume.html`; the downloadable PDF at `pdf-docs/pran-kishore-cv.pdf` must be kept in sync manually.
+
+To change colours or glass intensity, edit the CSS variables at the top of `styles/design-system.css` — they cascade everywhere automatically.
