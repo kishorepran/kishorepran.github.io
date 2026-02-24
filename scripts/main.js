@@ -110,6 +110,13 @@
         closeMenu();
       }
     });
+    document.addEventListener('click', function (e) {
+      if (hamburger.classList.contains('open') &&
+          !menu.contains(e.target) &&
+          !hamburger.contains(e.target)) {
+        closeMenu();
+      }
+    });
   }
 
   /* ── Scroll Animations ────────────────────────────────────── */
