@@ -14,10 +14,14 @@ This directory contains a personal portfolio website. It is a static website bui
 *   `blog.html`: The blog page.
 *   `resume.html`: The resume page.
 *   `contact.html`: The contact page.
+*   `courtesy.html`: A courtesy/thank you page.
 *   `w3.css`: A CSS framework used for styling the website.
-*   ` Favicon/`: This folder contains the favicon of the website.
+*   `common-custom.css`: Shared custom styles across the website.
+*   `*-custom.css` & `resume_custom.css`: Page-specific custom styles (e.g., `about-custom.css`, `blog-custom.css`).
+*   `Favicon/`: This folder contains the favicon of the website.
 *   `images/`: This folder contains the images used in the website.
 *   `pdf-docs/`: This folder contains the pdf documents used in the website.
+*   `README.md`: Basic repository information.
 
 # Usage
 
