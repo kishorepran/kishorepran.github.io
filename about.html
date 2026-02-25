@@ -1,266 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>About – Pran Kishore</title>
+  <meta name="description" content="Learn about Pran Kishore – iOS Tech Lead, career journey, and work experience.">
+  <meta name="author" content="Pran Kishore">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://kishorepran.github.io/about.html">
+  <meta property="og:title"       content="About – Pran Kishore">
+  <meta property="og:description" content="Learn about Pran Kishore – iOS Tech Lead, career journey, and work experience.">
+  <meta property="og:image"       content="https://kishorepran.github.io/images/background_aboutme_new.jpg">
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:site"        content="@pran_kishore">
+  <meta name="twitter:title"       content="About – Pran Kishore">
+  <meta name="twitter:description" content="Learn about Pran Kishore – iOS Tech Lead, career journey, and work experience.">
+  <meta name="twitter:image"       content="https://kishorepran.github.io/images/background_aboutme_new.jpg">
+  <link rel="icon" href="Favicon/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="Favicon/favicon.ico">
+  <link rel="apple-touch-icon" href="Favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles/design-system.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-		Remove this if you use the .htaccess -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!-- ── NAVBAR ───────────────────────────────────────────── -->
+  <nav class="glass-nav" id="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Pran<span class="nav-brand-dot">.</span></a>
+      <div class="nav-links">
+        <a href="index.html"     class="nav-pill">Home</a>
+        <a href="portfolio.html" class="nav-pill">Portfolio</a>
+        <a href="about.html"     class="nav-pill">About</a>
+        <a href="blog.html"      class="nav-pill">Blog</a>
+        <a href="resume.html"    class="nav-pill">Resume</a>
+        <a href="contact.html"   class="nav-pill">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle"></button>
+        <button class="nav-hamburger" id="nav-hamburger"
+                aria-label="Open navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
 
-		<title>About - Pran Kishore</title>
-		<meta name="description" content="">
-		<meta name="author" content="PRAN">
+  <!-- ── MOBILE MENU ──────────────────────────────────────── -->
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <a href="index.html"     class="mobile-nav-pill">Home</a>
+    <a href="portfolio.html" class="mobile-nav-pill">Portfolio</a>
+    <a href="about.html"     class="mobile-nav-pill">About</a>
+    <a href="blog.html"      class="mobile-nav-pill">Blog</a>
+    <a href="resume.html"    class="mobile-nav-pill">Resume</a>
+    <a href="contact.html"   class="mobile-nav-pill">Contact</a>
+  </nav>
 
-		<meta name="viewport" content="width=device-width; initial-scale=1.0">
-		<link rel="stylesheet" href="w3.css">
-		<link rel="stylesheet" href="common-custom.css">
-		<link rel="stylesheet" href="about-custom.css">
-		
-		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-		<link rel="shortcut icon" href="Favicon/favicon.ico">
-		<link rel="apple-touch-icon" href="Favicon/apple-touch-icon.png">
-        
-	</head>
+  <main id="main-content">
 
-	<body>
-		<!-- Main outer header container -->
-		<div class="w3-container w3-image headerBackgorundStyle" style="background: url('images/background_aboutme_new.jpg')" >
-			<!-- A translucent layer only if the image in background is light. -->
-			 <div class="w3-container headerBackgorundLayer">
-			<!-- Inner Navigation header -->
+  <!-- ── HERO ─────────────────────────────────────────────── -->
+  <section class="hero" aria-label="About hero">
+    <div class="hero-bg"
+         style="background-image: url('images/background_aboutme_new.jpg');"
+         role="img" aria-label="About page background"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Read and learn</p>
+      <h1 class="hero-headline">Who I <span class="accent">Am</span></h1>
+    </div>
+    <a href="#fun-facts" class="hero-scroll" aria-label="Scroll to content">
+      <span class="hero-scroll-label">Scroll</span>
+      <svg class="hero-scroll-icon" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <polyline points="6 9 12 15 18 9"/>
+      </svg>
+    </a>
+  </section>
 
-			<div class="w3-container  w3-center">
-				<div class="w3-row  w3-padding-24">
-					<div class="w3-col m3 l2">
-						<a class="buttonHeader" href="index.html">HOME</a>
-					</div>
-					<div class="w3-col m3 l2">
-						<a class="buttonHeader" href="portfolio.html">PORTFOLIO</a>
-					</div>
-					<div class="w3-col m3 l2">
-						<a class="buttonHeader" href="about.html">ABOUT</a>
-					</div>
-					<div class="w3-col m3 l2 ">
-						<a class="buttonHeader" href="blog.html">BLOG</a>
-					</div>
-					<div class="w3-col m3 l2 ">
-						<a class="buttonHeader" href="resume.html">RESUME</a>
-					</div>
-					<div class="w3-col m3 l2 ">
-						<a class="borderedButtonHeader" href="contact.html">CONTACT</a>
-					</div>
-				 </div>
-			</div>
+  <!-- ── A FEW FUN FACTS ──────────────────────────────────── -->
+  <section class="section" id="fun-facts" aria-labelledby="facts-heading">
+    <div class="glass-card fade-up">
+      <div class="glass-card-body glass-card-body--centered">
+        <span class="eyebrow">Personal</span>
+        <h2 class="section-title" id="facts-heading">A few fun facts</h2>
+        <p class="section-subtitle">
+          I am a hardware and gadget enthusiast guy. When I am working at a stretch, I love to
+          listen music and grab a cup of coffee. When I am drained out I go for subway to refill
+          and a movie show in theatre follows after.
+        </p>
+      </div>
+    </div>
+  </section>
 
-			<!-- Lower texts elements -->
-			<div class="w3-container w3-padding-24">
-				<div class="w3-container w3-center headerFirstTextStyle">
-					<h4>Read and learn</h4>
-				</div>
-				<div class="w3-container w3-center">
-					<h1 class="headerSecondtextStyle">Who I Am</h1>
-				</div>
+  <div class="glass-divider"></div>
 
-			</div>
-			
-			</div>
-		</div>
+  <!-- ── A LOOK INTO MY LIFE ──────────────────────────────── -->
+  <section class="section" aria-labelledby="life-heading">
+    <div class="glass-card fade-up">
+      <div class="glass-card-body glass-card-body--centered">
+        <span class="eyebrow">Day to Day</span>
+        <h2 class="section-title" id="life-heading">A look into my life</h2>
+        <p class="section-subtitle">
+          I start my days with a run or swim and stay updated on tech and business trends. On
+          weekends, I tutor Math and Physics to keep my analytical skills sharp. Professionally,
+          I am a seasoned iOS Tech Lead, expert in the full development lifecycle, and dedicated
+          to delivering high-quality mobile solutions.
+        </p>
+      </div>
+    </div>
+  </section>
 
-   <!-- Main outer header container  END -->
+  <!-- ── EPAM SYSTEMS BANNER ──────────────────────────────── -->
+  <div class="company-banner" aria-hidden="true">
+    <div class="company-banner-bg"
+         style="background-image: url('images/background_epamsystems.jpg');"></div>
+    <div class="company-banner-content">
+      <p class="company-banner-pre">My journey continues at</p>
+      <h2 class="company-banner-name">EPAM Systems</h2>
+    </div>
+  </div>
 
-   
-   <!-- First content div  WHO I AM -->
+  <!-- ── LEAD SOFTWARE ENGINEER ───────────────────────────── -->
+  <section class="section" aria-labelledby="epam-heading">
+    <div class="glass-card fade-up">
+      <div class="glass-card-body glass-card-body--centered">
+        <span class="eyebrow">Sep 2020 – Present</span>
+        <h2 class="section-title" id="epam-heading">Lead Software Engineer</h2>
+        <p class="section-subtitle">
+          As a Lead Software Engineer at EPAM Systems (Sep 2020 - Present), I lead a team of iOS
+          developers in delivering high-quality iOS apps. My role involves client interaction for
+          requirements, developing feasible Apple platform solutions, and cross-functional
+          coordination to ensure on-time, on-budget project delivery. I'm passionate about iOS
+          development, possess strong communication skills, and advocate for continuous learning,
+          leveraging extensive experience in CI/CD and GIT.
+        </p>
+      </div>
+    </div>
+  </section>
 
-		<div class="w3-container w3-padding-48">
-			<div class="w3-container w3-center w3-padding-left w3-padding-right">
-				<h2 class="briefcontentHeader">A few fun facts</h2>
-			</div>
-			<div class="w3-container w3-center">
-				<p class="jumboRightAndLeftPadding briefcontentDetail">
-					I am a hardware and gadget enthusiast guy. When I am working at a stretch, I love to listen music and grab a cup of coffee.
-					When I am drained out I go for subway to refill and a movie show in theatre follows after. 
-				</p>
-			</div>
+  <!-- ── OPTIMIZE IT SYSTEMS BANNER ───────────────────────── -->
+  <div class="company-banner company-banner--fallback" aria-hidden="true">
+    <div class="company-banner-bg"
+         style="background-image: url('images/background_optimizeitsystems.jpg');"></div>
+    <div class="company-banner-content">
+      <p class="company-banner-pre">I was a Tech Lead at</p>
+      <h2 class="company-banner-name">Optimize IT Systems</h2>
+    </div>
+  </div>
 
-		</div>
+  <!-- ── TECH LEAD ─────────────────────────────────────────── -->
+  <section class="section" aria-labelledby="optimize-heading">
+    <div class="glass-card fade-up">
+      <div class="glass-card-body glass-card-body--centered">
+        <span class="eyebrow">Mar 2019 – Sep 2020</span>
+        <h2 class="section-title" id="optimize-heading">Tech Lead</h2>
+        <p class="section-subtitle">
+          At Optimize IT Systems (Mar 2019 - Sep 2020), I led a team of 5 developers across 3
+          projects. My responsibilities included pre-sales activities, technical bid review, mobile
+          solution review, and project timeline estimation. I also collaborated closely with UI/UX
+          teams, facilitating design migrations from Photoshop to Sketch and later to Adobe XD,
+          ensuring seamless integration of design into development.
+        </p>
+      </div>
+    </div>
+  </section>
 
-        <!-- First content div END-->
-		<!-- Horizontal Line ONLY -->
-		<div class="horizontalRule w3-container">
-		</div>
-   
-   <!-- Second content div -->
+  <div class="glass-divider"></div>
 
-		<div class="w3-container w3-padding-48">
-			<div class="w3-container w3-center w3-padding-left w3-padding-right">
-				<h2 class="briefcontentHeader">A look into my life</h2>
-			</div>
-			<div class="w3-container w3-center">
-				<p class="jumboRightAndLeftPadding briefcontentDetail">
-					I start my days with a run or swim and stay updated on tech and business trends. On weekends, I tutor Math and Physics to keep my analytical skills sharp. Professionally, I am a seasoned iOS Tech Lead, expert in the full development lifecycle, and dedicated to delivering high-quality mobile solutions.
-				</p>
-			</div>
+  <!-- ── ATOS BANNER ──────────────────────────────────────── -->
+  <div class="company-banner" aria-hidden="true">
+    <div class="company-banner-bg"
+         style="background-image: url('images/background_atos.jpg');"></div>
+    <div class="company-banner-content">
+      <p class="company-banner-pre">My days working at</p>
+      <h2 class="company-banner-name">Atos India Pvt. Ltd.</h2>
+    </div>
+  </div>
 
-		</div>
+  <!-- ── ASSOCIATE CONSULTANT ─────────────────────────────── -->
+  <section class="section" aria-labelledby="atos-heading">
+    <div class="glass-card fade-up">
+      <div class="glass-card-body glass-card-body--centered">
+        <span class="eyebrow">May 2015 – March 2019</span>
+        <h2 class="section-title" id="atos-heading">Associate Consultant</h2>
+        <p class="section-subtitle">
+          As an Associate Consultant at Atos India Pvt. Ltd. (May 2015 - March 2019), I was
+          responsible for developing iOS Mobile Applications. My role included analyzing client
+          requirements, suggesting feasible mobile solutions, and managing the entire technical
+          lifecycle of projects—from evaluating business models and planning mobile applications
+          to UI/UX planning with the design team, coding, unit testing, polishing apps with Xcode
+          instruments, and implementing test strategies to ensure product quality. I also
+          contributed to application release management and securing and penetration testing for
+          mobile applications. I received the 'Atos Expert' award for boosting innovation,
+          improving R&amp;D, and setting high standards in project delivery.
+        </p>
+      </div>
+    </div>
+  </section>
 
-        <!-- Second content div END-->
-   
-   <!-- Intermediate container -->
-		<div class="w3-container w3-image headerBackgorundStyle" style="background: url('images/background_epamsystems.jpg')" >
-			
-			<!-- A translucent layer only if the image in background is light. -->
-			<div class="w3-container headerBackgorundLayer">
-			
-			<!-- Lower texts elements -->
-			<div class="w3-container w3-padding-32">
-				<div class="w3-container w3-center">
-					<h4 class="intermediateContentPreHeader">My journey continues at</h4>
-				</div>
-				<div class="w3-container w3-center">
-					<h1 class="intermediateContentHeader">EPAM Systems</h1>
-				</div>
-			</div>
-			
-			</div>
-			
-		</div>
+  <div class="glass-divider"></div>
 
-   <!-- Intermediate container  END -->
-   
-   <!-- Third content div -->
+  <!-- ── INDUSNET BANNER ──────────────────────────────────── -->
+  <div class="company-banner" aria-hidden="true">
+    <div class="company-banner-bg"
+         style="background-image: url('images/background_indusnet.jpg');"></div>
+    <div class="company-banner-content">
+      <p class="company-banner-pre">My days working at</p>
+      <h2 class="company-banner-name">Indusnet Technologies</h2>
+    </div>
+  </div>
 
-		<div class="w3-container w3-padding-48">
-			<div class="w3-container w3-center w3-padding-left w3-padding-right">
-				<h2 class="briefcontentHeader">Lead Software Engineer</h2>
-			</div>
-			<div class="w3-container w3-center">
-				<p class="jumboRightAndLeftPadding briefcontentDetail">
-					As a Lead Software Engineer at EPAM Systems (Sep 2020 - Present), I lead a team of iOS developers in delivering high-quality iOS apps. My role involves client interaction for requirements, developing feasible Apple platform solutions, and cross-functional coordination to ensure on-time, on-budget project delivery. I'm passionate about iOS development, possess strong communication skills, and advocate for continuous learning, leveraging extensive experience in CI/CD and GIT.
-				</p>
-			</div>
+  <!-- ── SOFTWARE ENGINEER ────────────────────────────────── -->
+  <section class="section" aria-labelledby="indusnet-heading">
+    <div class="glass-card fade-up">
+      <div class="glass-card-body glass-card-body--centered">
+        <span class="eyebrow">January 2014 – May 2015</span>
+        <h2 class="section-title" id="indusnet-heading">Software Engineer</h2>
+        <p class="section-subtitle">
+          As a Software Engineer at Indusnet Technologies (January 2014 - May 2015, which includes
+          the period at Customer First Infonet), I was an application developer with a background
+          in Computer Science Engineering. I worked on developing iOS Mobile Applications,
+          including working in a dedicated hiring model for offshore clients. My responsibilities
+          included estimating requirements and timelines for maintaining existing and new
+          applications, writing unit test code, distributing builds to internal testers and
+          clients, and checking app store guidelines for project readiness. My passion towards iOS
+          app development helped me accomplish tasks on time, opening doors to explore and enhance
+          my capabilities.
+        </p>
+      </div>
+    </div>
+  </section>
 
-		</div>
+  <!-- ── PRE-FOOTER CTA ───────────────────────────────────── -->
+  <div class="prefooter-cta">
+    <h3>Got an app idea. Need some help?</h3>
+    <a href="mailto:kishorepran@gmail.com?subject=Connect via website"
+       class="glass-btn glass-btn--primary">Contact Me</a>
+  </div>
 
-        <!-- Third content div END-->
-       
-   <!-- Intermediate container -->
-		<div class="w3-container w3-image headerBackgorundStyle" style="background: url('images/background_optimizeitsystems.jpg')" >
-			
-			<!-- A translucent layer only if the image in background is light. -->
-			<div class="w3-container headerBackgorundLayer">
-			
-			<!-- Lower texts elements -->
-			<div class="w3-container w3-padding-32">
-				<div class="w3-container w3-center">
-					<h4 class="intermediateContentPreHeader">I was a Tech Lead at</h4>
-				</div>
-				<div class="w3-container w3-center">
-					<h1 class="intermediateContentHeader">Optimize IT Systems</h1>
-				</div>
-			</div>
-			
-			</div>
-			
-		</div>
+  </main>
 
-   <!-- Intermediate container  END -->
-   
-   <!-- Fifth content div -->
+  <!-- ── FOOTER ───────────────────────────────────────────── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html"     class="footer-nav-link">Home</a>
+        <a href="portfolio.html" class="footer-nav-link">Portfolio</a>
+        <a href="about.html"     class="footer-nav-link">About</a>
+        <a href="blog.html"      class="footer-nav-link">Blog</a>
+        <a href="resume.html"    class="footer-nav-link">Resume</a>
+        <a href="contact.html"   class="footer-nav-link">Contact</a>
+        <a href="courtesy.html"  class="footer-nav-link">Courtesy</a>
+      </nav>
+      <div class="footer-social" aria-label="Social media links">
+        <a href="https://www.linkedin.com/in/pran-kishore/"
+           class="footer-social-link" aria-label="LinkedIn"
+           target="_blank" rel="noopener noreferrer">
+          <img src="images/social-linkedin.png" alt="LinkedIn" width="20" height="20">
+        </a>
+        <a href="https://twitter.com/pran_kishore"
+           class="footer-social-link" aria-label="Twitter"
+           target="_blank" rel="noopener noreferrer">
+          <img src="images/social-twitter.png" alt="Twitter" width="20" height="20">
+        </a>
+        <a href="https://www.facebook.com/pran.kishore.1"
+           class="footer-social-link" aria-label="Facebook"
+           target="_blank" rel="noopener noreferrer">
+          <img src="images/social-facebook.png" alt="Facebook" width="20" height="20">
+        </a>
+      </div>
+      <p class="footer-copyright">&copy; 2015–2026 Pran Kishore. All rights reserved.</p>
+    </div>
+  </footer>
 
-		<div class="w3-container w3-padding-48">
-			<div class="w3-container w3-center w3-padding-left w3-padding-right">
-				<h2 class="briefcontentHeader">Tech Lead</h2>
-			</div>
-			<div class="w3-container w3-center">
-				<p class="jumboRightAndLeftPadding briefcontentDetail">
-					At Optimize IT Systems (Mar 2019 - Sep 2020), I led a team of 5 developers across 3 projects. My responsibilities included pre-sales activities, technical bid review, mobile solution review, and project timeline estimation. I also collaborated closely with UI/UX teams, facilitating design migrations from Photoshop to Sketch and later to Adobe XD, ensuring seamless integration of design into development.
-				</p>
-			</div>
-
-		</div>
-        
-		<!-- Horizontal Line ONLY -->
-		<div class="horizontalRule w3-container">
-		</div>
-
-   <!-- Intermediate container -->
-		<div class="w3-container w3-image headerBackgorundStyle" style="background: url('images/background_atos.jpg')" >
-			
-			<!-- A translucent layer only if the image in background is light. -->
-			<div class="w3-container headerBackgorundLayer">
-			
-			<!-- Lower texts elements -->
-			<div class="w3-container w3-padding-32">
-				<div class="w3-container w3-center">
-					<h4 class="intermediateContentPreHeader">My days working at</h4>
-				</div>
-				<div class="w3-container w3-center">
-					<h1 class="intermediateContentHeader">Atos India Pvt. Ltd.</h1>
-				</div>
-			</div>
-			
-			</div>
-			
-		</div>
-
-   <!-- Intermediate container  END -->
-   
-   <!-- Third content div -->
-
-		<div class="w3-container w3-padding-48">
-			<div class="w3-container w3-center w3-padding-left w3-padding-right">
-				<h2 class="briefcontentHeader">Associate Consultant</h2>
-			</div>
-			<div class="w3-container w3-center">
-				<p class="jumboRightAndLeftPadding briefcontentDetail">
-					As an Associate Consultant at Atos India Pvt. Ltd. (May 2015 - March 2019), I was responsible for developing iOS Mobile Applications. My role included analyzing client requirements, suggesting feasible mobile solutions, and managing the entire technical lifecycle of projects—from evaluating business models and planning mobile applications to UI/UX planning with the design team, coding, unit testing, polishing apps with Xcode instruments, and implementing test strategies to ensure product quality. I also contributed to application release management and securing and penetration testing for mobile applications. I received the 'Atos Expert' award for boosting innovation, improving R&D, and setting high standards in project delivery.
-				</p>
-			</div>
-
-		</div>
-
-        <!-- Third content div END-->
-		
-		<!-- Horizontal Line ONLY -->
-		<div class="horizontalRule w3-container">
-		</div>
-   <!-- Intermediate container -->
-		<div class="w3-container w3-image headerBackgorundStyle" style="background: url('images/background_indusnet.jpg')" >
-			
-			<!-- A translucent layer only if the image in background is light. -->
-			<div class="w3-container headerBackgorundLayer">
-			
-			<!-- Lower texts elements -->
-			<div class="w3-container w3-padding-32">
-				<div class="w3-container w3-center">
-					<h4 class="intermediateContentPreHeader">My days working at</h4>
-				</div>
-				<div class="w3-container w3-center">
-					<h1 class="intermediateContentHeader">Indusnet Technologies</h1>
-				</div>
-			</div>
-			
-			</div>
-			
-		</div>
-
-   <!-- Intermediate container  END -->
-   
-   <!-- Fifth content div -->
-
-		<div class="w3-container w3-padding-48">
-			<div class="w3-container w3-center w3-padding-left w3-padding-right">
-				<h2 class="briefcontentHeader">Software Engineer</h2>
-			</div>
-			<div class="w3-container w3-center">
-				<p class="jumboRightAndLeftPadding briefcontentDetail">
-					As a Software Engineer at Indusnet Technologies (January 2014 - May 2015, which includes the period at Customer First Infonet), I was an application developer with a background in Computer Science Engineering. I worked on developing iOS Mobile Applications, including working in a dedicated hiring model for offshore clients. My responsibilities included estimating requirements and timelines for maintaining existing and new applications, writing unit test code, distributing builds to internal testers and clients, and checking app store guidelines for project readiness. My passion towards iOS app development helped me accomplish tasks on time, opening doors to explore and enhance my capabilities.
-				</p>
-			</div>
-
-		</div>
-
-        <!-- Fifth content div END-->
-
-	</body>
+  <script src="scripts/main.js"></script>
+</body>
 </html>
