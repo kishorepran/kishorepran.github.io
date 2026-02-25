@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="styles/design-system.css">
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- ── NAVBAR ───────────────────────────────────────────── -->
   <nav class="glass-nav" id="main-nav" role="navigation" aria-label="Main navigation">
@@ -58,6 +59,8 @@
     <a href="contact.html"   class="mobile-nav-pill">Contact</a>
   </nav>
 
+  <main id="main-content">
+
   <!-- ── HERO ─────────────────────────────────────────────── -->
   <section class="hero" aria-label="Courtesy hero">
     <div class="hero-bg"
@@ -81,13 +84,13 @@
     <div class="courtesy-layout fade-up">
 
       <div>
-        <p class="courtesy-section-label" id="courtesy-heading">Links to Everything</p>
+        <p class="courtesy-section-label" role="heading" aria-level="2" id="courtesy-heading">Links to Everything</p>
       </div>
 
       <div>
 
         <div class="courtesy-group">
-          <p class="courtesy-group-heading">Tutorial Websites</p>
+          <p class="courtesy-group-heading" role="heading" aria-level="3">Tutorial Websites</p>
           <ul class="courtesy-list">
             <li>
               <a href="http://www.w3schools.com/" target="_blank" rel="noopener noreferrer">
@@ -113,7 +116,7 @@
         </div>
 
         <div class="courtesy-group">
-          <p class="courtesy-group-heading">YouTube Tutorials</p>
+          <p class="courtesy-group-heading" role="heading" aria-level="3">YouTube Tutorials</p>
           <ul class="courtesy-list">
             <li>
               <a href="https://www.youtube.com/watch?v=Ok60gdJif0U&list=PLttcEXjN1UcHi3Rc-FSNZOaFSsSjFWCBS"
@@ -149,7 +152,7 @@
         </div>
 
         <div class="courtesy-group">
-          <p class="courtesy-group-heading">Random Help Links</p>
+          <p class="courtesy-group-heading" role="heading" aria-level="3">Random Help Links</p>
           <ul class="courtesy-list">
             <li>
               <a href="https://developer.yahoo.com/performance/rules.html"
@@ -171,7 +174,7 @@
         </div>
 
         <div class="courtesy-group">
-          <p class="courtesy-group-heading">Special Thanks</p>
+          <p class="courtesy-group-heading" role="heading" aria-level="3">Special Thanks</p>
           <ul class="courtesy-list">
             <li>
               <a href="https://in.linkedin.com/in/arijitsarbagna"
@@ -185,7 +188,7 @@
         </div>
 
         <div class="courtesy-group">
-          <p class="courtesy-group-heading">Hosting Courtesy</p>
+          <p class="courtesy-group-heading" role="heading" aria-level="3">Hosting Courtesy</p>
           <ul class="courtesy-list">
             <li>
               <a href="https://www.openshift.com/" target="_blank" rel="noopener noreferrer">
@@ -211,6 +214,8 @@
     <a href="mailto:kishorepran@gmail.com?subject=Connect via website"
        class="glass-btn glass-btn--primary">Contact Me</a>
   </div>
+
+  </main>
 
   <!-- ── FOOTER ───────────────────────────────────────────── -->
   <footer class="site-footer" role="contentinfo">

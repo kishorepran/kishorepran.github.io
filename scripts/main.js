@@ -50,7 +50,14 @@
 
   function initTheme() {
     var stored = getStoredTheme();
-    var theme  = stored || 'dark';
+    var theme;
+    if (stored) {
+      theme = stored;
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+      theme = 'light';
+    } else {
+      theme = 'dark';
+    }
     applyTheme(theme);
 
     var btn = document.getElementById('theme-toggle');

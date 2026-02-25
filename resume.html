@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="styles/design-system.css">
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- ── NAVBAR ───────────────────────────────────────────── -->
   <nav class="glass-nav" id="main-nav" role="navigation" aria-label="Main navigation">
@@ -58,6 +59,8 @@
     <a href="contact.html"   class="mobile-nav-pill">Contact</a>
   </nav>
 
+  <main id="main-content">
+
   <!-- ── HERO ─────────────────────────────────────────────── -->
   <section class="hero" aria-label="Resume hero">
     <div class="hero-bg"
@@ -84,12 +87,12 @@
   <section class="section" id="technologies" aria-labelledby="tech-heading">
     <div class="resume-layout fade-up">
       <div>
-        <p class="resume-section-label" id="tech-heading">Technologies</p>
+        <p class="resume-section-label" role="heading" aria-level="2" id="tech-heading">Technologies</p>
       </div>
       <div>
         <div class="grid-2" style="gap:32px; margin-bottom:0;">
           <div>
-            <p class="subsection-heading">Day-to-Day Comfort</p>
+            <p class="subsection-heading" role="heading" aria-level="3">Day-to-Day Comfort</p>
             <div class="skill-tags">
               <span class="skill-tag">GIT / SVN</span>
               <span class="skill-tag">Xcode 26</span>
@@ -101,7 +104,7 @@
             </div>
           </div>
           <div>
-            <p class="subsection-heading">Experience With</p>
+            <p class="subsection-heading" role="heading" aria-level="3">Experience With</p>
             <div class="skill-tags">
               <span class="skill-tag">JAVA / JAVASCRIPT</span>
               <span class="skill-tag">Sketch / XD / Figma</span>
@@ -120,7 +123,7 @@
   <section class="section" aria-labelledby="ios-heading">
     <div class="resume-layout fade-up">
       <div>
-        <p class="resume-section-label" id="ios-heading">iOS Core Skills</p>
+        <p class="resume-section-label" role="heading" aria-level="2" id="ios-heading">iOS Core Skills</p>
       </div>
       <div>
         <div class="ios-skill-block">
@@ -157,7 +160,7 @@
   <section class="section" aria-labelledby="work-heading">
     <div class="resume-layout fade-up">
       <div>
-        <p class="resume-section-label" id="work-heading">Work Experience</p>
+        <p class="resume-section-label" role="heading" aria-level="2" id="work-heading">Work Experience</p>
       </div>
       <div>
 
@@ -230,7 +233,7 @@
   <section class="section" aria-labelledby="edu-heading">
     <div class="resume-layout fade-up">
       <div>
-        <p class="resume-section-label" id="edu-heading">Education</p>
+        <p class="resume-section-label" role="heading" aria-level="2" id="edu-heading">Education</p>
       </div>
       <div>
 
@@ -282,6 +285,8 @@
     <a href="mailto:kishorepran@gmail.com?subject=Connect via website"
        class="glass-btn glass-btn--primary">Contact Me</a>
   </div>
+
+  </main>
 
   <!-- ── FOOTER ───────────────────────────────────────────── -->
   <footer class="site-footer" role="contentinfo">
