@@ -9,7 +9,6 @@
 :root {
   /* ── Backgrounds ── */
   --bg-primary:   #08080d;
-  --bg-secondary: #0d0d16;
   --bg-gradient:
     radial-gradient(ellipse 80% 60% at 20% 10%, rgba(10, 132, 255, 0.10) 0%, transparent 70%),
     radial-gradient(ellipse 60% 50% at 80% 85%, rgba(191, 90, 242, 0.07) 0%, transparent 70%),
@@ -32,14 +31,9 @@
   --blur-lg: blur(36px) saturate(200%);
 
   /* ── Accents ── */
-  --accent-blue:         #0A84FF;
-  --accent-blue-dim:     rgba(10, 132, 255, 0.70);
-  --accent-blue-glass:   rgba(10, 132, 255, 0.16);
-  --accent-blue-glow:    0 0 28px rgba(10, 132, 255, 0.45);
-  --accent-purple:       #BF5AF2;
-  --accent-purple-glass: rgba(191, 90, 242, 0.14);
-  --accent-teal:         #5AC8F5;
-  --accent-teal-glass:   rgba(90, 200, 245, 0.14);
+  --accent-blue:       #0A84FF;
+  --accent-blue-glass: rgba(10, 132, 255, 0.16);
+  --accent-teal:       #5AC8F5;
 
   /* ── Text ── */
   --text-primary:   rgba(255, 255, 255, 0.92);
@@ -58,11 +52,9 @@
   --text-xl:   22px;
   --text-2xl:  28px;
   --text-3xl:  40px;
-  --text-4xl:  56px;
   --text-hero: clamp(48px, 8vw, 80px);
 
   /* ── Radii ── */
-  --r-xs:   6px;
   --r-sm:   10px;
   --r-md:   14px;
   --r-lg:   18px;
@@ -85,7 +77,6 @@
 ════════════════════════════════════════════════════════════ */
 [data-theme="light"] {
   --bg-primary:   #f2f2f7;
-  --bg-secondary: #ffffff;
   --bg-gradient:
     radial-gradient(ellipse 80% 60% at 20% 10%, rgba(10, 132, 255, 0.06) 0%, transparent 70%),
     radial-gradient(ellipse 60% 50% at 80% 85%, rgba(191, 90, 242, 0.04) 0%, transparent 70%),
@@ -106,10 +97,8 @@
   --text-tertiary:  rgba(0, 0, 0, 0.48);
 
   /* Apple's light-mode blue — slightly deeper than dark-mode #0A84FF */
-  --accent-blue:         #0071E3;
-  --accent-blue-dim:     rgba(0, 113, 227, 0.70);
-  --accent-blue-glass:   rgba(0, 113, 227, 0.10);
-  --accent-blue-glow:    0 0 24px rgba(0, 113, 227, 0.30);
+  --accent-blue:       #0071E3;
+  --accent-blue-glass: rgba(0, 113, 227, 0.10);
 }
 
 /* ════════════════════════════════════════════════════════════
