@@ -1,153 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Website Development Post – Pran Kishore</title>
+  <meta name="description" content="The journey to develop this site – Pran Kishore's blog post on learning HTML5 and CSS3.">
+  <meta name="author" content="Pran Kishore">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Open Graph -->
+  <meta property="og:type"        content="article">
+  <meta property="og:url"         content="https://kishorepran.github.io/blog.html">
+  <meta property="og:title"       content="The Journey to Build This Site – Pran Kishore">
+  <meta property="og:description" content="The journey to develop this site – how an iOS developer learned HTML5 and CSS3 to build his own portfolio.">
+  <meta property="og:image"       content="https://kishorepran.github.io/images/background_blog.jpg">
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:site"        content="@pran_kishore">
+  <meta name="twitter:title"       content="The Journey to Build This Site – Pran Kishore">
+  <meta name="twitter:description" content="The journey to develop this site – how an iOS developer learned HTML5 and CSS3 to build his own portfolio.">
+  <meta name="twitter:image"       content="https://kishorepran.github.io/images/background_blog.jpg">
+  <link rel="icon" href="Favicon/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="Favicon/favicon.ico">
+  <link rel="apple-touch-icon" href="Favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles/design-system.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-		Remove this if you use the .htaccess -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!-- ── NAVBAR ───────────────────────────────────────────── -->
+  <nav class="glass-nav" id="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Pran<span class="nav-brand-dot">.</span></a>
+      <div class="nav-links">
+        <a href="index.html"     class="nav-pill">Home</a>
+        <a href="portfolio.html" class="nav-pill">Portfolio</a>
+        <a href="about.html"     class="nav-pill">About</a>
+        <a href="blog.html"      class="nav-pill">Blog</a>
+        <a href="resume.html"    class="nav-pill">Resume</a>
+        <a href="contact.html"   class="nav-pill">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle"></button>
+        <button class="nav-hamburger" id="nav-hamburger"
+                aria-label="Open navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
 
-		<title>Website Development Post - Pran Kishore</title>
-		<meta name="description" content="">
-		<meta name="author" content="PRAN">
+  <!-- ── MOBILE MENU ──────────────────────────────────────── -->
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <a href="index.html"     class="mobile-nav-pill">Home</a>
+    <a href="portfolio.html" class="mobile-nav-pill">Portfolio</a>
+    <a href="about.html"     class="mobile-nav-pill">About</a>
+    <a href="blog.html"      class="mobile-nav-pill">Blog</a>
+    <a href="resume.html"    class="mobile-nav-pill">Resume</a>
+    <a href="contact.html"   class="mobile-nav-pill">Contact</a>
+  </nav>
 
-		<meta name="viewport" content="width=device-width; initial-scale=1.0">
-		<link rel="stylesheet" href="w3.css">
-		<link rel="stylesheet" href="common-custom.css">
-		
-		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-		<link rel="shortcut icon" href="Favicon/favicon.ico">
-		<link rel="apple-touch-icon" href="Favicon/apple-touch-icon.png">
-	</head>
+  <main id="main-content">
 
-	<body>
-		<!-- Main outer header container -->
-		<div class="w3-container w3-image headerBackgorundStyle" style="background: url('images/background_blog.jpg')" >
-			<!-- A translucent layer only if the image in background is light. -->
-			<div class="w3-container headerBackgorundLayer">
-			<!-- Inner Navigation header -->
+  <!-- ── HERO ─────────────────────────────────────────────── -->
+  <section class="hero" aria-label="Blog hero">
+    <div class="hero-bg"
+         style="background-image: url('images/background_blog.jpg');"
+         role="img" aria-label="Blog page background"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Space for expressing</p>
+      <h1 class="hero-headline"><span class="accent">Discoveries</span>, Thoughts, And More</h1>
+    </div>
+    <a href="#post" class="hero-scroll" aria-label="Scroll to content">
+      <span class="hero-scroll-label">Scroll</span>
+      <svg class="hero-scroll-icon" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <polyline points="6 9 12 15 18 9"/>
+      </svg>
+    </a>
+  </section>
 
-			<div class="w3-container  w3-center">
-				<div class="w3-row  w3-padding-24">
-					<div class="w3-col m3 l2">
-						<a class="buttonHeader" href="index.html">HOME</a>
-					</div>
-					<div class="w3-col m3 l2">
-						<a class="buttonHeader" href="portfolio.html">PORTFOLIO</a>
-					</div>
-					<div class="w3-col m3 l2">
-						<a class="buttonHeader" href="about.html">ABOUT</a>
-					</div>
-					<div class="w3-col m3 l2 ">
-						<a class="buttonHeader" href="blog.html">BLOG</a>
-					</div>
-					<div class="w3-col m3 l2 ">
-						<a class="buttonHeader" href="resume.html">RESUME</a>
-					</div>
-					<div class="w3-col m3 l2 ">
-						<a class="borderedButtonHeader" href="contact.html">CONTACT</a>
-					</div>
-				</div>
-			</div>
+  <!-- ── BLOG POST ─────────────────────────────────────────── -->
+  <section class="section" id="post" aria-label="Blog post">
+    <div class="glass-card fade-up">
+      <div class="glass-card-body">
+        <article>
+          <p class="post-meta">Posted On: 29/02/2016</p>
+          <h2 class="post-title">The journey to develop this site.</h2>
+          <div class="post-body">
+            <p>
+              The journey began from the day I took off from college after completing my graduation
+              with a dream of developing my own website. When I entered the Industry I started off
+              with mobile application development in iOS and Android, later when I was presented
+              with a requirement to start off with Hybrid mobile application development for its
+              huge time and cost effective property, I realized, it would not be an easy task to
+              dive straight away in it without acquiring convenient knowledge of HTML5 and CSS3.
+            </p>
+            <p>
+              I figured it out as an opportunity to build my website and snag complete knowledge of
+              web designing. I took the firt step of learning through W3C website which eventually
+              made me switch into Adobe Dreamweaver using video tutorials from youtube. The first
+              few days were pretty tough to get along with Dreamweaver as the tool and the UI was
+              quite tough with respect to accuracy. I was facing difficulties with the IDE and
+              Browser in order to provide my website a responsive view. I also came to know about
+              Bootstrap which speeded up things real fast for me and I shifted from Dreamweaver to
+              Open source Software i.e. Aptana Studio 3. I also got acquainted with Pixlr to
+              provide my website a good design where video tutorials from youtube played a major
+              part.
+            </p>
+            <p>
+              I have embedded some links below (See Courtesy) for people interested in developing a
+              website. Incase of any further assistance please feel free to contact me in order to
+              get done with a Suitable Website up and Running in an exclusively small period of
+              time.
+            </p>
+            <p>Thank You for Visiting (",)</p>
+          </div>
 
-			<!-- Lower texts elements -->
-			<div class="w3-container w3-padding-24">
-				<div class="w3-container w3-center headerFirstTextStyle">
-					<h4>Space for expressing</h4>
-				</div>
-				<div class="w3-container w3-center">
-					<h1 class="headerSecondtextStyle">Discoveries , Thoughts , And More</h1>
-				</div>
+          <div style="margin-top:40px;">
+            <a href="courtesy.html" class="glass-btn">Courtesy</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-			</div>
-			</div>
-		</div>
+  <!-- ── PRE-FOOTER CTA ───────────────────────────────────── -->
+  <div class="prefooter-cta">
+    <h3>Got an app idea. Need some help?</h3>
+    <a href="mailto:kishorepran@gmail.com?subject=Connect via website"
+       class="glass-btn glass-btn--primary">Contact Me</a>
+  </div>
 
-   <!-- Main outer header container  END -->
-   <!-- First content div -->
+  </main>
 
-		<div class="w3-container w3-padding-32">
-			<!-- Posting Date -->
-			<div class="w3-row">
-					<div class="w3-col w3-right s3 w3-container">
-					<h5 class="updateDateStyle">Posted On : 29/02/2016 </h5>
-					</div>
-			</div>
-			<!-- Posting Date END-->
-			<div class="w3-container w3-center w3-padding-left w3-padding-right">
-				<h2 class="briefcontentHeader">The journey to develop this site.</h2>
-			</div>
-			<div class="w3-container w3-center">
-				<p class="jumboRightAndLeftPadding briefcontentDetail">
-					The journey began from the day I took off from college after completing my graduation with a dream of
-					developing my own website.When I entered the Industry I started off with mobile application development in
-					iOS and Android,later when I was presented with a requirement to start off with Hybrid mobile application
-					development for its huge time and cost effective property,I realized, it would not be an easy task to dive straight away
-					in it without acquiring convenient knowledge of HTML5 and CSS3.<br/><br/>I figured it out as an opportunity to build
-					my website and snag complete knowledge of web designing.<br/>I took the firt step of learning through W3C website which
-					eventually made me switch into Adobe Dreamweaver using video tutorials from youtube.The first few days were pretty
-					tough to get along with Dreamweaver as the tool and the UI was quite tough with respect to accuracy.I was facing difficulties
-					with the IDE and Browser in order to provide my website a responsive view.I also came to know about Bootstrap which speeded up
-					things real fast for me and I shifted from Dreamweaver to Open source Software i.e. Aptana Studio 3.I also got acquainted
-					with Pixlr to provide my website a good design where video tutorials from youtube played a major part.
-					<br/>
-					I have embedded some links below (See Courtesy) for people interested in developing a website.Incase of any further assistance please feel free
-					to contact me in order to get done with a Suitable Website up and Running in an exclusively small period of time.
-					<br/>
-					Thank You for Visiting (",)
-				</p>
-			</div>
-			
-			<!-- Sixth content div -->
+  <!-- ── FOOTER ───────────────────────────────────────────── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html"     class="footer-nav-link">Home</a>
+        <a href="portfolio.html" class="footer-nav-link">Portfolio</a>
+        <a href="about.html"     class="footer-nav-link">About</a>
+        <a href="blog.html"      class="footer-nav-link">Blog</a>
+        <a href="resume.html"    class="footer-nav-link">Resume</a>
+        <a href="contact.html"   class="footer-nav-link">Contact</a>
+        <a href="courtesy.html"  class="footer-nav-link">Courtesy</a>
+      </nav>
+      <div class="footer-social" aria-label="Social media links">
+        <a href="https://www.linkedin.com/in/pran-kishore/"
+           class="footer-social-link" aria-label="LinkedIn"
+           target="_blank" rel="noopener noreferrer">
+          <img src="images/social-linkedin.png" alt="LinkedIn" width="20" height="20">
+        </a>
+        <a href="https://twitter.com/pran_kishore"
+           class="footer-social-link" aria-label="Twitter"
+           target="_blank" rel="noopener noreferrer">
+          <img src="images/social-twitter.png" alt="Twitter" width="20" height="20">
+        </a>
+        <a href="https://www.facebook.com/pran.kishore.1"
+           class="footer-social-link" aria-label="Facebook"
+           target="_blank" rel="noopener noreferrer">
+          <img src="images/social-facebook.png" alt="Facebook" width="20" height="20">
+        </a>
+      </div>
+      <p class="footer-copyright">&copy; 2015–2026 Pran Kishore. All rights reserved.</p>
+    </div>
+  </footer>
 
-		<div class="w3-container w3-center mediumTopAndBottomMargin">
-
-			<a class="borderedButtonContent" href="courtesy.html">Courtesy</a>
-
-		</div>
-
-        <!-- Sixth content div END-->
-
-		</div>
-   
-   <!-- Pre footer content div -->
-
-        <div class="w3-container w3-padding-16 preFooterContent">
-			<div class="w3-container">
-				<h4 class="w3-left preFooterHeader ">Got an app idea. Need some help  ? </h4>
-				<a class="borderedButtonPrefooter w3-right" href="mailto:kishorepran@gmail.com?subject=Connect via website">Contact Me</a>
-			</div>
-		</div>
-
-        <!-- Pre footer content div END-->
-
-		<!-- Foooter content div -->
-
-     <div class="w3-container w3-center  w3-padding-48 footerContent">
-     	
-     	<div class="w3-container w3-center">
-						<a class="buttonFooter" href="index.html">HOME</a>
-						<a class="buttonFooter" href="portfolio.html">PORTFOLIO</a>
-						<a class="buttonFooter" href="about.html">ABOUT</a>
-						<a class="buttonFooter" href="blog.html">BLOG</a>
-						<a class="buttonFooter" href="resume.html">RESUME</a>
-						<a class="buttonFooter" href="contact.html">CONTACT</a>
-						<a class="buttonFooter" href="courtesy.html">COURTESY</a>
-		</div>
-		<div class="w3-container w3-center footerCopyrightText">
-			<p>&copy; 2015 Pran Kishore. All rights reserved.</p>
-		</div>	
-		
-		<div class="w3-container w3-center">
-			<a href="https://www.linkedin.com/in/pran-kishore/"><img src="images/social-linkedin.png" class="footerSocialIcons" alt="Linked In"></a>
-			<a href="https://twitter.com/pran_kishore"><img src="images/social-twitter.png" class="footerSocialIcons" alt="Twitter"></a>
-			<a href="https://www.facebook.com/pran.kishore.1"><img src="images/social-facebook.png" class="footerSocialIcons" alt="Facebook"></a>
-		</div>
-				
-	</div>
-
-    <!-- Foooter content div END-->
-   
-   
-	</body>
+  <script src="scripts/main.js"></script>
+</body>
 </html>

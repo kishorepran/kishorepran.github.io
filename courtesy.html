@@ -1,177 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Courtesy for website development – Pran Kishore</title>
+  <meta name="description" content="Resources, tutorials, and people who helped build this site.">
+  <meta name="author" content="Pran Kishore">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://kishorepran.github.io/courtesy.html">
+  <meta property="og:title"       content="Courtesy – Pran Kishore">
+  <meta property="og:description" content="Resources, tutorials, and people who helped build this site.">
+  <meta property="og:image"       content="https://kishorepran.github.io/images/background_courtesy.jpg">
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:site"        content="@pran_kishore">
+  <meta name="twitter:title"       content="Courtesy – Pran Kishore">
+  <meta name="twitter:description" content="Resources, tutorials, and people who helped build this site.">
+  <meta name="twitter:image"       content="https://kishorepran.github.io/images/background_courtesy.jpg">
+  <link rel="icon" href="Favicon/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="Favicon/favicon.ico">
+  <link rel="apple-touch-icon" href="Favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles/design-system.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-		Remove this if you use the .htaccess -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!-- ── NAVBAR ───────────────────────────────────────────── -->
+  <nav class="glass-nav" id="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Pran<span class="nav-brand-dot">.</span></a>
+      <div class="nav-links">
+        <a href="index.html"     class="nav-pill">Home</a>
+        <a href="portfolio.html" class="nav-pill">Portfolio</a>
+        <a href="about.html"     class="nav-pill">About</a>
+        <a href="blog.html"      class="nav-pill">Blog</a>
+        <a href="resume.html"    class="nav-pill">Resume</a>
+        <a href="contact.html"   class="nav-pill">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle"></button>
+        <button class="nav-hamburger" id="nav-hamburger"
+                aria-label="Open navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
 
-		<title>Courtesy for website development - Pran Kishore</title>
-		<meta name="description" content="">
-		<meta name="author" content="PRAN">
+  <!-- ── MOBILE MENU ──────────────────────────────────────── -->
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <a href="index.html"     class="mobile-nav-pill">Home</a>
+    <a href="portfolio.html" class="mobile-nav-pill">Portfolio</a>
+    <a href="about.html"     class="mobile-nav-pill">About</a>
+    <a href="blog.html"      class="mobile-nav-pill">Blog</a>
+    <a href="resume.html"    class="mobile-nav-pill">Resume</a>
+    <a href="contact.html"   class="mobile-nav-pill">Contact</a>
+  </nav>
 
-		<meta name="viewport" content="width=device-width; initial-scale=1.0">
-		
-		<link rel="stylesheet" href="w3.css">
-		<link rel="stylesheet" href="common-custom.css">
-		<link rel="stylesheet" href="resume_custom.css">
-		<link rel="stylesheet" href="courtesy-custom.css">
-		
-		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-		<link rel="shortcut icon" href="Favicon/favicon.ico">
-		<link rel="apple-touch-icon" href="Favicon/apple-touch-icon.png">
-	</head>
+  <main id="main-content">
 
-	<body>
-		<!-- Main outer header container -->
-		<div class="w3-container w3-image headerBackgorundStyle" style="background: url('images/background_courtesy.jpg')" >
-			<!-- A translucent layer only if the image in background is light. -->
-			<div class="w3-container headerBackgorundLayer">
-			<!-- Inner Navigation header -->
+  <!-- ── HERO ─────────────────────────────────────────────── -->
+  <section class="hero" aria-label="Courtesy hero">
+    <div class="hero-bg"
+         style="background-image: url('images/background_courtesy.jpg');"
+         role="img" aria-label="Courtesy page background"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Things / People who helped me</p>
+      <h1 class="hero-headline"><span class="accent">Building</span> This Site</h1>
+    </div>
+    <a href="#links" class="hero-scroll" aria-label="Scroll to content">
+      <span class="hero-scroll-label">Scroll</span>
+      <svg class="hero-scroll-icon" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <polyline points="6 9 12 15 18 9"/>
+      </svg>
+    </a>
+  </section>
 
-			<div class="w3-container  w3-center">
-				<div class="w3-row  w3-padding-24">
-					<div class="w3-col m3 l2">
-						<a class="buttonHeader" href="index.html">HOME</a>
-					</div>
-					<div class="w3-col m3 l2">
-						<a class="buttonHeader" href="portfolio.html">PORTFOLIO</a>
-					</div>
-					<div class="w3-col m3 l2">
-						<a class="buttonHeader" href="about.html">ABOUT</a>
-					</div>
-					<div class="w3-col m3 l2 ">
-						<a class="buttonHeader" href="blog.html">BLOG</a>
-					</div>
-					<div class="w3-col m3 l2 ">
-						<a class="buttonHeader" href="resume.html">RESUME</a>
-					</div>
-					<div class="w3-col m3 l2 ">
-						<a class="borderedButtonHeader" href="contact.html">CONTACT</a>
-					</div>
-				</div>
-			</div>
+  <!-- ── LINKS TO EVERYTHING ───────────────────────────────── -->
+  <section class="section" id="links" aria-labelledby="courtesy-heading">
+    <div class="courtesy-layout fade-up">
 
-			<!-- Lower texts elements -->
-			<div class="w3-container w3-padding-24">
-				<div class="w3-container w3-center headerFirstTextStyle">
-					<h4>Things / People who helped me</h4>
-				</div>
-				<div class="w3-container w3-center">
-					<h1 class="headerSecondtextStyle">Building This Site</h1>
-				</div>
+      <div>
+        <p class="courtesy-section-label" role="heading" aria-level="2" id="courtesy-heading">Links to Everything</p>
+      </div>
 
-			</div>
-			
-			</div>
-		</div>
+      <div>
 
-   <!-- Main outer header container  END -->
+        <div class="courtesy-group">
+          <p class="courtesy-group-heading" role="heading" aria-level="3">Tutorial Websites</p>
+          <ul class="courtesy-list">
+            <li>
+              <a href="http://www.w3schools.com/" target="_blank" rel="noopener noreferrer">
+                W3 Schools for HTML5 / CSS3 / W3CSS
+              </a>
+            </li>
+            <li>
+              <a href="http://www.tutorialspoint.com/index.htm" target="_blank" rel="noopener noreferrer">
+                Tutorials Point
+              </a>
+            </li>
+            <li>
+              <a href="https://www.codecademy.com/" target="_blank" rel="noopener noreferrer">
+                Code Cademy
+              </a>
+            </li>
+            <li>
+              <a href="http://www.tutorialrepublic.com/" target="_blank" rel="noopener noreferrer">
+                Tuorial Republic
+              </a>
+            </li>
+          </ul>
+        </div>
 
-    <!-- Second content div -->
-		
-		<div class="w3-container w3-margin-32">
-			<div class="w3-row">
-			<div class="w3-third w3-container">
-				<h2 class="sideHeading">Links to Everything</h2>
-			</div>
-			<div class="w3-half w3-container">
-				
-				<div class="w3-container">
-				<h4 class="listSubHeading">Tutorial Web sites</h4>
-				<ul style="list-style-type:disc" class="w3-padding-4 detailStyle">
-						<li class="w3-padding-8"><a class="listLink" href="http://www.w3schools.com/">W3 Schools for HTML5 / CSS3 / W3CSS </a> </li>
-						<li class="w3-padding-8"><a class="listLink" href="http://www.tutorialspoint.com/index.htm">Tutorials Point</a></li>
-						<li class="w3-padding-8"><a class="listLink" href="https://www.codecademy.com/">Code Cademy</a></li>
-						<li class="w3-padding-8"><a class="listLink" href="http://www.tutorialrepublic.com/">Tuorial Republic</a></li>
-					</ul>
-			    </div>
-			    
-			    <div class="w3-container">
-				<h4 class="listSubHeading">You tube tutorials</h4>
-				<ul style="list-style-type:disc" class="w3-padding-4 detailStyle">
-						<li class="w3-padding-8"><a class="listLink" href="https://www.youtube.com/watch?v=Ok60gdJif0U&list=PLttcEXjN1UcHi3Rc-FSNZOaFSsSjFWCBS">Dream weaver Tutorial by Daniel</a></li>
-						<li class="w3-padding-8"><a class="listLink" href="https://www.youtube.com/watch?v=UDfcEzAbgH8&index=13&list=PLaZp2zXwZQ-mQGbj_LQl8wv_CzZ4Xr9l0">CSS 3 Animations</a></li>
-						<li class="w3-padding-8"><a class="listLink" href="https://www.youtube.com/watch?v=A_XDQSG1wsA">Pixlr Web app</a></li>
-						<li class="w3-padding-8"><a class="listLink" href="https://www.youtube.com/watch?v=9z3N5Ti9sCo&list=PL6CD20EBB30C2C341">Photoshop tutorial series</a></li>
-						<li class="w3-padding-8"><a class="listLink" href="https://www.youtube.com/watch?v=eill5G4LKrU">Logo design.Converting sketch into logo in photoshop.</a></li>
-				</ul>
-			    </div>
-			    
-			    <div class="w3-container">
-				<h4 class="listSubHeading">Random Help links</h4>
-				<ul style="list-style-type:disc" class="w3-padding-4 detailStyle">
-						<li class="w3-padding-8"> <a class="listLink" href="https://developer.yahoo.com/performance/rules.html"> Yahoo best practices for speeding up websites.</a>  </li>
-						<li class="w3-padding-8"><a class="listLink" href="http://www.awwwards.com/">Website design idea from Awwards</a></li>
-						<li class="w3-padding-8"><a class="listLink" href="http://stackoverflow.com/">Stack Overflow</a></li>
-				</ul>
-			    </div>
-			    
-			    <div class="w3-container">
-				<h4 class="listSubHeading">Special Thanks</h4>
-				<ul style="list-style-type:disc" class="w3-padding-4 detailStyle">
-						<li class="w3-padding-8"><a class="listLink" href="https://in.linkedin.com/in/arijitsarbagna">My Manager &amp; Mentor Arijit Sarbagna. For motivating me :-)</a></li>
-						<li class="w3-padding-8">Amit Chakraborty - Helping hand &amp; Buddy.</li>
-						<li class="w3-padding-8">Pritam Gangopadhyay- Content Editing &amp; logo/Favicon sketch Buddy.</li>
-				</ul>
-			    </div>
-			    
-			    <div class="w3-container">
-				<h4 class="listSubHeading">Hosting Courtesy</h4>
-				<ul style="list-style-type:disc" class="w3-padding-4 detailStyle">
-						<li class="w3-padding-8"><a class="listLink" href="https://www.openshift.com/">OpenShift</a></li>
-						<li class="w3-padding-8"><a class="listLink" href="http://www.youtube.com/watch?v=0jj8fLiO1Bs">Open shift Windows set up tutorial </a> </li>
-				</ul>
-			    </div>
-			    
-			</div>
-		</div>
-		</div>
-		
-      <!-- Second content div END-->
+        <div class="courtesy-group">
+          <p class="courtesy-group-heading" role="heading" aria-level="3">YouTube Tutorials</p>
+          <ul class="courtesy-list">
+            <li>
+              <a href="https://www.youtube.com/watch?v=Ok60gdJif0U&list=PLttcEXjN1UcHi3Rc-FSNZOaFSsSjFWCBS"
+                 target="_blank" rel="noopener noreferrer">
+                Dream weaver Tutorial by Daniel
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=UDfcEzAbgH8&index=13&list=PLaZp2zXwZQ-mQGbj_LQl8wv_CzZ4Xr9l0"
+                 target="_blank" rel="noopener noreferrer">
+                CSS 3 Animations
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=A_XDQSG1wsA"
+                 target="_blank" rel="noopener noreferrer">
+                Pixlr Web app
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=9z3N5Ti9sCo&list=PL6CD20EBB30C2C341"
+                 target="_blank" rel="noopener noreferrer">
+                Photoshop tutorial series
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=eill5G4LKrU"
+                 target="_blank" rel="noopener noreferrer">
+                Logo design. Converting sketch into logo in photoshop.
+              </a>
+            </li>
+          </ul>
+        </div>
 
+        <div class="courtesy-group">
+          <p class="courtesy-group-heading" role="heading" aria-level="3">Random Help Links</p>
+          <ul class="courtesy-list">
+            <li>
+              <a href="https://developer.yahoo.com/performance/rules.html"
+                 target="_blank" rel="noopener noreferrer">
+                Yahoo best practices for speeding up websites.
+              </a>
+            </li>
+            <li>
+              <a href="http://www.awwwards.com/" target="_blank" rel="noopener noreferrer">
+                Website design idea from Awwards
+              </a>
+            </li>
+            <li>
+              <a href="http://stackoverflow.com/" target="_blank" rel="noopener noreferrer">
+                Stack Overflow
+              </a>
+            </li>
+          </ul>
+        </div>
 
+        <div class="courtesy-group">
+          <p class="courtesy-group-heading" role="heading" aria-level="3">Special Thanks</p>
+          <ul class="courtesy-list">
+            <li>
+              <a href="https://in.linkedin.com/in/arijitsarbagna"
+                 target="_blank" rel="noopener noreferrer">
+                My Manager &amp; Mentor Arijit Sarbagna. For motivating me :-)
+              </a>
+            </li>
+            <li>Amit Chakraborty – Helping hand &amp; Buddy.</li>
+            <li>Pritam Gangopadhyay – Content Editing &amp; logo/Favicon sketch Buddy.</li>
+          </ul>
+        </div>
 
-   <!-- Pre footer content div -->
+        <div class="courtesy-group">
+          <p class="courtesy-group-heading" role="heading" aria-level="3">Hosting Courtesy</p>
+          <ul class="courtesy-list">
+            <li>
+              <a href="https://www.openshift.com/" target="_blank" rel="noopener noreferrer">
+                OpenShift
+              </a>
+            </li>
+            <li>
+              <a href="http://www.youtube.com/watch?v=0jj8fLiO1Bs"
+                 target="_blank" rel="noopener noreferrer">
+                Open shift Windows set up tutorial
+              </a>
+            </li>
+          </ul>
+        </div>
 
-        <div class="w3-container w3-padding-16 preFooterContent">
-			<div class="w3-container">
-				<h4 class="w3-left preFooterHeader ">Got an app idea. Need some help  ? </h4>
-				<a class="borderedButtonPrefooter w3-right" href="mailto:kishorepran@gmail.com?subject=Connect via website">Contact Me</a>
-			</div>
-		</div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Pre footer content div END-->
+  <!-- ── PRE-FOOTER CTA ───────────────────────────────────── -->
+  <div class="prefooter-cta">
+    <h3>Got an app idea. Need some help?</h3>
+    <a href="mailto:kishorepran@gmail.com?subject=Connect via website"
+       class="glass-btn glass-btn--primary">Contact Me</a>
+  </div>
 
-		<!-- Foooter content div -->
+  </main>
 
-     <div class="w3-container w3-center  w3-padding-48 footerContent">
-     	
-     	<div class="w3-container w3-center">
-						<a class="buttonFooter" href="index.html">HOME</a>
-						<a class="buttonFooter" href="portfolio.html">PORTFOLIO</a>
-						<a class="buttonFooter" href="about.html">ABOUT</a>
-						<a class="buttonFooter" href="blog.html">BLOG</a>
-						<a class="buttonFooter" href="resume.html">RESUME</a>
-						<a class="buttonFooter" href="contact.html">CONTACT</a>
-						<a class="buttonFooter" href="courtesy.html">COURTESY</a>
-		</div>
-		<div class="w3-container w3-center footerCopyrightText">
-			<p>&copy; 2015 Pran Kishore. All rights reserved.</p>
-		</div>	
-		
-		<div class="w3-container w3-center">
-			<a href="https://www.linkedin.com/in/pran-kishore/"><img src="images/social-linkedin.png" class="footerSocialIcons" alt="Linked In"></a>
-			<a href="https://twitter.com/pran_kishore"><img src="images/social-twitter.png" class="footerSocialIcons" alt="Twitter"></a>
-			<a href="https://www.facebook.com/pran.kishore.1"><img src="images/social-facebook.png" class="footerSocialIcons" alt="Facebook"></a>
-		</div>
-				
-	</div>
+  <!-- ── FOOTER ───────────────────────────────────────────── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html"     class="footer-nav-link">Home</a>
+        <a href="portfolio.html" class="footer-nav-link">Portfolio</a>
+        <a href="about.html"     class="footer-nav-link">About</a>
+        <a href="blog.html"      class="footer-nav-link">Blog</a>
+        <a href="resume.html"    class="footer-nav-link">Resume</a>
+        <a href="contact.html"   class="footer-nav-link">Contact</a>
+        <a href="courtesy.html"  class="footer-nav-link">Courtesy</a>
+      </nav>
+      <div class="footer-social" aria-label="Social media links">
+        <a href="https://www.linkedin.com/in/pran-kishore/"
+           class="footer-social-link" aria-label="LinkedIn"
+           target="_blank" rel="noopener noreferrer">
+          <img src="images/social-linkedin.png" alt="LinkedIn" width="20" height="20">
+        </a>
+        <a href="https://twitter.com/pran_kishore"
+           class="footer-social-link" aria-label="Twitter"
+           target="_blank" rel="noopener noreferrer">
+          <img src="images/social-twitter.png" alt="Twitter" width="20" height="20">
+        </a>
+        <a href="https://www.facebook.com/pran.kishore.1"
+           class="footer-social-link" aria-label="Facebook"
+           target="_blank" rel="noopener noreferrer">
+          <img src="images/social-facebook.png" alt="Facebook" width="20" height="20">
+        </a>
+      </div>
+      <p class="footer-copyright">&copy; 2015–2026 Pran Kishore. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <!-- Foooter content div END-->
-
-
-
-	</body>
+  <script src="scripts/main.js"></script>
+</body>
 </html>
